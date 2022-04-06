@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
-    
     import { Button, Overlay } from "svelte-materialify";
     import Player from "./Player.svelte";
     import colors from "svelte-materialify/src/utils/colors";
@@ -9,27 +7,31 @@
     let is_fullscreen = false;
 </script>
 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
 <main>
     <div class="header">
-
-            <div>
-                <span style="margin-left: 20px; font-size: 4em">Neblix</span>
-            </div>
-            <div>
-                <ul class="navMenu">
-                    <li>Home</li>
-                    <li>Series</li>
-                    <li>Movies</li>
-                    <li>New and popular</li>
-                    <li>My list</li>
-                </ul>
-            </div>
-
-            <div class="navSearch">
-                <span class="fa fa-search fa-2x"></span>
-            </div>    
+        <div>
+            <span style="margin-left: 20px; font-size: 4em">Neblix</span>
         </div>
-    
+        <div>
+            <ul class="navMenu">
+                <li>Home</li>
+                <li>Series</li>
+                <li>Movies</li>
+                <li>New and popular</li>
+                <li>My list</li>
+            </ul>
+        </div>
+
+        <div class="navSearch">
+            <span class="fa fa-search fa-2x" />
+        </div>
+    </div>
+
     <div class="container">
         <!--
             <div class="autoplayVideo">
@@ -38,31 +40,35 @@
               
         </div>
         -->
-        
-       
+
         <h1>Recomended</h1>
 
         <div class="flex-container">
             {#each Array(20) as _, i}
-                <div  on:click={() => { video_player_is_active = true;}}>
-                
-                <div class="item"></div>
+                <div
+                    on:click={() => {
+                        video_player_is_active = true;
+                    }}
+                >
+                    <div class="item" />
                 </div>
-                
             {/each}
         </div>
 
         <h1>Top 10</h1>
 
         <div class="flex-container">
-            
             {#each Array(10) as _, i}
-
-                <div style="display: flex; flex-direction:row; align-items: center">
-                    <span style="font-size: 5em;">{i+1}</span>
-                    <div  on:click={() => { video_player_is_active = true;}}>
-                
-                        <div class="item"></div>
+                <div
+                    style="display: flex; flex-direction:row; align-items: center"
+                >
+                    <span style="font-size: 5em;">{i + 1}</span>
+                    <div
+                        on:click={() => {
+                            video_player_is_active = true;
+                        }}
+                    >
+                        <div class="item" />
                     </div>
                 </div>
             {/each}
@@ -70,20 +76,14 @@
 
         <h1>Action</h1>
 
-        <div class="flex-container">
-            
-        </div>
+        <div class="flex-container" />
 
         <h1>News</h1>
-
     </div>
 
-    <div>
-        
-    </div>
+    <div />
 
-
-   <div class="grid">
+    <div class="grid">
         {#each Array(100) as _, i}
             <div
                 class="grid-item"
@@ -91,7 +91,6 @@
                     video_player_is_active = true;
                 }}
             />
-            
         {/each}
     </div>
     <Overlay
@@ -168,10 +167,7 @@
         </div>
     </Overlay>>
 
-<src>
-    
-</src> -->
-
+    <src /> -->
 </main>
 
 <style>
@@ -213,9 +209,8 @@
 
     .navSearch {
         margin-left: auto;
-        margin-right: 20px;        
+        margin-right: 20px;
     }
-
 
     main {
         min-height: 100vh;
@@ -259,7 +254,8 @@
         text-align: center;
         height: 133px;
         width: 220px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-image: url("https://sveltejs.github.io/assets/caminandes-llamigos.jpg");
         background-size: cover; /* Resize the background image to cover the entire container */
     }
@@ -272,7 +268,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-
 
     #video {
         position: fixed;
@@ -295,7 +290,7 @@
         top: 10px; /* position the top  edge of the element at the middle of the parent */
         left: 50%; /* position the left edge of the element at the middle of the parent */
 
-        transform: translate(-50%,  0);
+        transform: translate(-50%, 0);
         z-index: 100;
     }
     #video #close {
