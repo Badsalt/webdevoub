@@ -82,7 +82,7 @@
             <div>
                 <a class="link" href="{item.url}">{item.name}</a>
                 {#if item.type == "file"}
-                    <span class="fa fa-download"></span>
+                    <span class="fa fa-download"></span>§
                 {:else if item.type == "dataset"}
                     <span class="fa fa-database"></span> 
                 {:else if item.type = "dataverse"}
