@@ -227,6 +227,7 @@
         padding: 1em 1.5em;
         margin: 0;
     }
+
     .pageNavigation li {
         padding: 0.5em;
         margin: 0.25em;
