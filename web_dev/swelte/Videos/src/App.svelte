@@ -2,9 +2,24 @@
     import { Button, Overlay } from "svelte-materialify";
     import Player from "./Player.svelte";
     import colors from "svelte-materialify/src/utils/colors";
+    import VideoDescription from "./videoDescription.svelte";
+    import { isFullDescription } from "./stores.js";
 
     let video_player_is_active = false;
     let is_fullscreen = false;
+    $isFullDescription = false
+
+    //"https://www.imdb.com/video/imdb/vi3226468377/imdb/embed"
+
+    const imagesSrc = {
+        missionImposible: "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_.jpg",
+        batman: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJApnr9b8RCQjrOr0YpzqMTY1xXWNrfWHgq0VvNxVNUaG9XyrV",
+        shrek: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVxk3SR0pJC9qW6r_kysDnnbHgqqGvNfIGQU_yVp10PBzA_vxO",
+        theHangover: "https://m.media-amazon.com/images/M/MV5BMTU1MDA1MTYwMF5BMl5BanBnXkFtZTcwMDcxMzA1Mg@@._V1_.jpg",
+        matrix: "https://www.idg.se/editorial/0/path/1.759585!imageManager/3229336147.jpg"
+    };
+
+    // let indexSrc = {"0": "missionImposible", "" }
 </script>
 
 <link
@@ -13,9 +28,14 @@
 />
 
 <main>
+
+    {#if $isFullDescription}
+    <VideoDescription video_src = "https://www.imdb.com/video/imdb/vi3226468377/imdb/embed"/>
+    {/if}
+
     <div class="header">
         <div>
-            <span style="margin-left: 20px; font-size: 4em">Neblix</span>
+            <span style="margin-left: 20px; font-size: 4em, ">neflix</span>
         </div>
         <div>
             <ul class="navMenu">
@@ -43,15 +63,50 @@
 
         <h1>Recomended</h1>
 
+        <!-- <iframe id="Sv_Multi_3" data-url="" src="https://www.2embed.ru/embed/imdb/movie?id=tt0091530" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="900px" width="100%" scrolling="no" allow="encrypted-media" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" loading="lazy"></iframe> -->
+
         <div class="flex-container">
-            {#each Array(20) as _, i}
+            {#each Array(10) as _, i}
                 <div
+                style="display: flex; flex-direction:row; align-items: center"
+                >
+                <div
+                    class="item-container"
                     on:click={() => {
-                        video_player_is_active = true;
+                        // video_player_is_active = true;
+                        $isFullDescription = true;
                     }}
                 >
-                    <div class="item" />
-                </div>
+                    <div
+                        class="item"
+                        style=" background-image: url('
+                        {Object.keys(imagesSrc)
+                            .map((key) => {
+                                return imagesSrc[key];
+                            })[Math.floor(i / 2)]}') "
+                    />
+
+                    <div class="short_description">
+                        <div style="display: flex; flex-direction: row; gap: 10px">
+                            <i class="fa fa-play-circle"></i>
+                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-thumbs-up"></i>
+                            <i class="fa fa-chevron-circle-down" style="margin-left: auto; margin-right: 10px "></i>
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 10px; margin-top: 10px;">
+                            <span style="color: green">NEW</span>
+                            <span class="age-restriction">16+</span>
+                            <span>1 h 30 min</span>
+                            <span class="resolution">HD</span>
+                        </div>
+                           
+                    </div>
+
+                    </div>
+                    </div>
+
+
+
             {/each}
         </div>
 
@@ -62,13 +117,32 @@
                 <div
                     style="display: flex; flex-direction:row; align-items: center"
                 >
-                    <span style="font-size: 5em;">{i + 1}</span>
+
+                    <span style="font-size: 5em;">{i + 1}</span> 
                     <div
+                        class="item-container"
                         on:click={() => {
                             video_player_is_active = true;
                         }}
                     >
                         <div class="item" />
+                        <div class="short_description">
+                            <div style="display: flex; flex-direction: row; gap: 10px">
+                                <i class="fa fa-play-circle"></i>
+                                <i class="fa fa-plus"></i>
+                                <i class="fa fa-thumbs-up"></i>
+                                <i class="fa fa-chevron-circle-down" style="margin-left: auto; margin-right: 10px "></i>
+                            </div>
+                            <div style="display: flex; flex-direction: row; gap: 10px; margin-top: 10px;">
+                                <span style="color: green">NEW</span>
+                                <span class="age-restriction">16+</span>
+                                <span>1 h 30 min</span>
+                                <span class="resolution">HD</span>
+                            </div>
+                            
+    
+                           
+                        </div>
                     </div>
                 </div>
             {/each}
@@ -77,7 +151,6 @@
         <h1>Action</h1>
 
         <div class="flex-container" />
-
         <h1>News</h1>
     </div>
 
@@ -167,10 +240,13 @@
         </div>
     </Overlay>>
 
-    <src /> -->
+    
 </main>
 
 <style>
+
+
+
     :root {
         --netflix-red: #e50914;
         --netflix-red-opacity: rgba(229, 9, 20, 0.3);
@@ -179,7 +255,10 @@
     :global(body) {
         padding: 0;
         margin: 0;
+        background-color: rgb(20, 20, 20);
+        overflow: auto;
     }
+
 
     h1 {
         font-size: 3em;
@@ -194,7 +273,7 @@
         right: 0;
         left: 0;
         vertical-align: middle;
-        background-color: black;
+        background-color: rgb(20, 20, 20);
         color: white;
         height: 75px;
     }
@@ -215,7 +294,6 @@
     main {
         min-height: 100vh;
         width: 100vw;
-        background: black;
         padding-left: 5%;
         padding-right: 5%;
         box-sizing: border-box;
@@ -223,7 +301,6 @@
 
     .container {
         color: white;
-        background-color: black;
         margin-top: 75px;
         margin-left: auto;
         margin-right: auto;
@@ -235,14 +312,36 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        background-color: grey;
         overflow-x: scroll;
-        overflow-y: hidden;
+        overflow-y: visible;
         margin-top: 20px;
         margin-bottom: 20px;
         gap: 20px;
-        height: 200px;
+        height: 400px;
         text-align: center;
+    }
+
+    .flex-container .item-container {
+        box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2),
+            0 6px 20px 4px rgba(0, 0, 0, 0.19);
+        height: 225px;
+        border: grey solid;
+    }
+
+    .flex-container .item-container .short_description {
+        display: none;
+        margin: 0 10px;
+        height: 50px;
+    }
+
+    .flex-container .item-container:hover {
+        height: 280px;
+        width: 300px;
+    }
+
+    .flex-container .item-container:hover .short_description {
+        display: flex;
+        flex-direction: column;
     }
 
     .flex-container .item {
@@ -252,13 +351,27 @@
         padding: 20px;
         font-size: 30px;
         text-align: center;
-        height: 133px;
-        width: 220px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-            0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-image: url("https://sveltejs.github.io/assets/caminandes-llamigos.jpg");
+        height: 220px;
+        width: 150px;
+        /*https://sveltejs.github.io/assets/caminandes-llamigos.jpg */
+        /* https://api.lorem.space/image/movie?w=960&h=540 */
+        /* */
+        background-image: url("https://api.lorem.space/image/movie?w=150&h=220");
         background-size: cover; /* Resize the background image to cover the entire container */
+        margin: auto;
     }
+
+    .age-restriction {
+        border: rgba(255, 255, 255, 0.656) 1px solid;
+        padding: 0 5px;
+        
+    }
+
+    .resolution {
+        border: rgba(255, 255, 255, 0.656) 1px solid;
+        padding: 0 5px;
+    }
+
 
     .autoplayVideo {
         margin-top: 10px;
@@ -365,7 +478,7 @@
         background-color: #ffffff33;
     }
     ::-webkit-scrollbar-thumb {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(100, 100, 100);
         border-radius: 1em;
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
         box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
