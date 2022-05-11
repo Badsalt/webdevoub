@@ -9,6 +9,8 @@
 	let duration;
 	let paused = true;
 
+	export let video_arg;
+
 	let showControls = true;
 	let showControlsTimeout;
 
@@ -30,6 +32,7 @@
 		const { left, right } = this.getBoundingClientRect();
 		time = (duration * (clientX - left)) / (right - left);
 	}
+
 
 	// we can't rely on the built-in click event, because it fires
 	// after a drag — we have to listen for clicks ourselves
@@ -68,8 +71,8 @@
 <div id="container">
 	<video
 		id="vid"
-		poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
-		src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
+		poster={video_arg["poster"]}
+		src={video_arg["src"]}
 		on:mousedown|preventDefault|stopPropagation={handleMousedown}
 		on:mouseup|preventDefault|stopPropagation={handleMouseup}
 		bind:currentTime={time}
