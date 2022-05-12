@@ -111,6 +111,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 <main class:no-scrolling={$isFullDescription}>
     <!-- <iframe src="https://www.imdb.com/video/imdb/vi336244761/imdb/embed?autoplay=false&width=480" width="480" height="270" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe> -->
@@ -147,7 +150,7 @@
         </div>
         -->
 
-        <h1>Recomended</h1>
+        <h1 id="recomended">Recomended</h1>
 
         <div class="flex-container">
             {#each Array(10) as _, i}
@@ -246,17 +249,12 @@
                     </div>
                 </div>
             {/each}
-        </div>
-
-        <h1>Action</h1>
-
-        <div class="flex-container" />
-        <h1>News</h1>
+        </div>        
     </div>
 
     <div />
 
-    <div class="grid">
+    <!-- <div class="grid">
         {#each Array(100) as _, i}
             <div
                 class="grid-item"
@@ -265,7 +263,7 @@
                 }}
             />
         {/each}
-    </div>
+    </div> -->
     <Overlay
         opacity={is_fullscreen ? 1 : 0.7}
         color="black"
@@ -356,6 +354,7 @@
         padding: 0;
         margin: 0;
         background-color: rgb(20, 20, 20);
+        font-family: 'Roboto', sans-serif;
     }
 
     h1 {

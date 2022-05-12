@@ -33,6 +33,12 @@
         time = (duration * (clientX - left)) / (right - left);
     }
 
+    function a() {
+        clearTimeout(showControlsTimeout);
+        showControlsTimeout = setTimeout(() => (showControls = false), 2500);
+        showControls = true;
+    }
+
     //https://t22.gomoplayer.com/vxokfuqpx2alavf4eq3yvjouqxhmlu7cqgsebsk72klrdmhahkyxkafknqiq/v.mp4
 
     // we can't rely on the built-in click event, because it fires
@@ -68,28 +74,25 @@
 
     //https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen#examples
     function toggleFullScreen() {
-        let div = document.getElementById("vid"); 
-
-        if(!document.fullscreenElement) {
-            div.requestFullscreen()
+        let div = document.getElementById("vid");
+    
+        if (!document.fullscreenElement) {
+            div.requestFullscreen();
         } else {
             document.exitFullscreen();
         }
 
-
-    //    if (!div.fullscreenElement &&    // alternative standard method
-    //     !div.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
-    //      if (div.requestFullscreen) {
-    //         div.requestFullscreen();
-    //      } else if (div.mozRequestFullScreen) {
-    //         div.mozRequestFullScreen();
-    //      } else if (div.webkitRequestFullscreen) {
-    //         div.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-    //      }
-    //     }
-     }
-
-
+        //    if (!div.fullscreenElement &&    // alternative standard method
+        //     !div.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+        //      if (div.requestFullscreen) {
+        //         div.requestFullscreen();
+        //      } else if (div.mozRequestFullScreen) {
+        //         div.mozRequestFullScreen();
+        //      } else if (div.webkitRequestFullscreen) {
+        //         div.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+        //      }
+        //     }
+    }
 </script>
 
 <Overlay
@@ -98,8 +101,11 @@
     opacity={0.5}
 >
     <div class="container">
-        <span style="position: absolute; top:5px; left:5px; color: white; z-index: 5;">{args["movie_name"]}</span>
-        <div class="video-container" id= "vid">
+        <span
+            style="position: absolute; top:5px; left:5px; color: white; z-index: 5;"
+            ><b>{args["movie_name"]}</b></span
+        >
+        <div class="video-container" id="vid">
             <video
                 src={args["video_src"]}
                 poster={args["video_poster"]}
@@ -113,48 +119,52 @@
                 <track kind="captions" />
             </video>
 
-            
-
             <div
                 class="controls"
                 style="opacity: {duration && showControls ? 1 : 0}"
-                
+                on:mousemove|preventDefault|stopPropagation={a}
+                on:touchmove|preventDefault|stopPropagation={a}
+                on:mousedown|preventDefault|stopPropagation={a}
+                on:mouseup|preventDefault|stopPropagation={a}
             >
                 <div class="info">
                     <span class="time">{format(time)}</span>
-                    <progress value={time / duration || 0}                 
+                    <progress
+                        value={time / duration || 0}
                         on:mousemove|preventDefault|stopPropagation={handleMove}
                         on:touchmove|preventDefault|stopPropagation={handleMove}
                         on:mousedown|preventDefault|stopPropagation={handleMove}
-                        on:mouseup|preventDefault|stopPropagation={handleMove} />
+                        on:mouseup|preventDefault|stopPropagation={handleMove}
+                    />
                     <span>
-                        <span class="time" style="margin-right: 10%;">{format(duration)}</span>
+                        <span class="time" style="margin-right: 10%;"
+                            >{format(duration)}</span
+                        >
                     </span>
-                </div>    
+                </div>
                 <Button
-                size="small"
-                class="secondary-color"
-                style="z-index: 10"
-                on:click={() => {
-                    // do not focus the fullscreenbutton if clicked
-                    // this is because otherwise clicking space will cause
-                    // the video player to maximize/minimize instead of pause/play
-                    // when space is clicked
-                //     if (document.activeElement != document.body)
-                //         document.activeElement.blur();
-    
-                //         let div = document.getElementById("vid"); 
-                //     if (div.requestFullscreen) div.requestFullscreen();
-                //     else if (div.webkitRequestFullscreen)
-                //         div.webkitRequestFullscreen();
-                //     else if (div.msRequestFullScreen)
-                //         div.msRequestFullScreen();
-                toggleFullScreen();
-                }}
-                
-            >
-            <i class="fa fa-arrows-alt"></i> 
-            </Button>
+                    size="small"
+                    class="secondary-color"
+                    style="z-index: 10"
+                    on:click={() => {
+                        // do not focus the fullscreenbutton if clicked
+                        // this is because otherwise clicking space will cause
+                        // the video player to maximize/minimize instead of pause/play
+                        // when space is clicked
+                        //     if (document.activeElement != document.body)
+                        //         document.activeElement.blur();
+
+                        //         let div = document.getElementById("vid");
+                        //     if (div.requestFullscreen) div.requestFullscreen();
+                        //     else if (div.webkitRequestFullscreen)
+                        //         div.webkitRequestFullscreen();
+                        //     else if (div.msRequestFullScreen)
+                        //         div.msRequestFullScreen();
+                        toggleFullScreen();
+                    }}
+                >
+                    <i class="fa fa-arrows-alt" />
+                </Button>
             </div>
         </div>
 
@@ -172,9 +182,17 @@
 
             <div class="item">
                 <div class="flex-box-cast">
-                    <p class="actors">Actors: {args["actors"]}</p>
-                    <p class="directors">Directors: {args["directors"]}</p>
-                    <p class="genres">Genres: {args["genres"]}</p>
+                    <p class="actors">
+                        <b>Actors:</b>
+                        {#each args["actors"] as value}
+                            <span>{value} </span>
+                        {/each}
+                    </p>
+                    <p class="directors">
+                        <b>Directors:</b>
+                        {args["directors"]}
+                    </p>
+                    <p class="genres"><b>Genres:</b> {args["genres"]}</p>
                 </div>
             </div>
         </div>
@@ -199,56 +217,73 @@
     .video-container {
         text-align: center;
         position: relative;
-    }   
+    }
 
     .controls {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		transition: opacity 1s;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-items: end;
-		align-content: flex-end;
-        
-	}
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: opacity 1s;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: end;
+        align-content: flex-end;
+        color: white;
+    }
 
     .info {
-		display: flex;
-		width: 90%;
-		justify-content: space-between;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
         margin-right: auto;
-	}
+    }
 
     .time {
-		width: 3em;
-	}
+        width: 3em;
+    }
 
-	.time:last-child {
-		text-align: right;
-	}
+    .time:last-child {
+        text-align: right;
+    }
 
-	progress {
-		width: 90%;
-		height: 20px;
+    progress {
+        width: 90%;
+        height: 20px;
         margin-right: auto;
-		-webkit-appearance: none;
-		appearance: none;
-	}
+        -webkit-appearance: none;
+        appearance: none;
+    }
 
-	progress::-webkit-progress-bar {
-		background-color: rgba(0, 0, 0, 0.2);
-	}
+    @media sceen and (min-width: 2000px) {
+        .container {
+            width: 50%;
+        }
+    }
 
-	progress::-webkit-progress-value {
-		background-color: rgba(255, 255, 255, 0.6);
-	}
+    @media screen and (max-width: 1920px) {
+        .container {
+            width: 70%;
+        }
+    }
 
+    @media screen and (max-width: 800px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    progress::-webkit-progress-value {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
 
     .flex-box {
         display: flex;
