@@ -336,8 +336,8 @@
 
             <Player
                 video_arg={{
-                    src: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
-                    poster: "https://sveltejs.github.io/assets/caminandes-llamigos.jpg",
+                        src: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+                        poster: "https://sveltejs.github.io/assets/caminandes-llamigos.jpg",
                 }}
             />
         </div>
