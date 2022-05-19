@@ -7,8 +7,8 @@
 
     let video_player_is_active = false;
     let is_fullscreen = false;
+    let rickRoll;
     $isFullDescription = false;
-
 
     //"https://www.imdb.com/video/imdb/vi3226468377/imdb/embed"
 
@@ -18,8 +18,9 @@
                 "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/96/4b/c3/964bc350-2122-22d7-1a2c-975a2b8d4231/source/600x600bb.jpg",
             video_src:
                 "https://movietrailers.apple.com/movies/paramount/mission-impossible-fallout/mission-impossible-fallout-trailer-1_i320.m4v",
-            fullMovie: "https://t22.gomoplayer.com/vxokfuqpx2alavf4eq3yvjouqxhmlu7cqgsebsk72klrdmhahkyxkafknqiq/v.mp4",
-                description:
+            fullMovie:
+                "https://t22.gomoplayer.com/vxokfuqpx2alavf4eq3yvjouqxhmlu7cqgsebsk72klrdmhahkyxkafknqiq/v.mp4",
+            description:
                 "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
             video_poster:
                 "https://trailers.apple.com/trailers/paramount/mission-impossible---fallout/images/thumbnail_27843.jpg",
@@ -29,22 +30,23 @@
             released: 2018,
             movie_name: "Mission: Impossible - Fallout",
             directors: ["Christopher McQuarrie"],
-            genres: ["Action", "spion", "thriller"],
+            genres: ["Action", "Spion", "Thriller"],
         },
         batman: {
             img_src:
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJApnr9b8RCQjrOr0YpzqMTY1xXWNrfWHgq0VvNxVNUaG9XyrV",
             video_src:
                 "https://movietrailers.apple.com/movies/wb/the-batman-2022/the-batman-trailer-2_i320.m4v",
-            fullMovie: null,   
+            fullMovie: null,
             description:
                 "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
-            video_poster: "https://m.media-amazon.com/images/M/MV5BOTc3ODFlMWYtZDJjNC00ZGQyLTk5MWQtNzliNWMzOWVlM2FlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
+            video_poster:
+                "https://m.media-amazon.com/images/M/MV5BOTc3ODFlMWYtZDJjNC00ZGQyLTk5MWQtNzliNWMzOWVlM2FlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
             actors: ["Robert Pattingson", "Zoë Kravitz", "Jeffrey Wright"],
             runtime: "2h 56m",
             ageRestriction: "15+",
             released: 2022,
-            movie_name: "The Batman" ,
+            movie_name: "The Batman",
             directors: ["Matt Reeves"],
             genres: ["Action", "Drama", "Adventure", "Criminal", "Mystery"],
         },
@@ -53,10 +55,11 @@
                 "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVxk3SR0pJC9qW6r_kysDnnbHgqqGvNfIGQU_yVp10PBzA_vxO",
             video_src:
                 "https://ia801603.us.archive.org/25/items/ShrekTrailer/ShrekTrailer.mp4",
-            fullMovie: null,    
+            fullMovie: null,
             description:
                 "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
-            video_poster: "https://m.media-amazon.com/images/M/MV5BMjA5MzkwMzI0N15BMl5BanBnXkFtZTcwMzcwODI0Ng@@._V1_.jpg",    
+            video_poster:
+                "https://m.media-amazon.com/images/M/MV5BMjA5MzkwMzI0N15BMl5BanBnXkFtZTcwMzcwODI0Ng@@._V1_.jpg",
             actors: [
                 "Mike Myers (voice)",
                 "Eddie Murphy (voice)",
@@ -74,10 +77,11 @@
                 "https://m.media-amazon.com/images/M/MV5BMTU1MDA1MTYwMF5BMl5BanBnXkFtZTcwMDcxMzA1Mg@@._V1_.jpg",
             video_src:
                 "https://ia902805.us.archive.org/15/items/thehangoveralansfunniestmoments_202002/The%20Hangover%202009%20Official%20Trailer%20%231%20%20%20Comedy%20Movie.mp4",
-            fullMovie: null,    
+            fullMovie: null,
             description:
                 "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
-            video_poster: "https://m.media-amazon.com/images/M/MV5BMjIwMjIxMDY3Nl5BMl5BanBnXkFtZTgwNzMwNjMwMjE@._V1_FMjpg_UX1024_.jpg",    
+            video_poster:
+                "https://m.media-amazon.com/images/M/MV5BMjIwMjIxMDY3Nl5BMl5BanBnXkFtZTgwNzMwNjMwMjE@._V1_FMjpg_UX1024_.jpg",
             actors: ["Bradley Cooper", "Ed Helms", "Zach Galifianakis"],
             runtime: "1 h 30min",
             ageRestriction: "11+",
@@ -92,8 +96,10 @@
             video_src:
                 "https://ia803406.us.archive.org/29/items/turner_video_2797/2797.mp4",
             fullMovie: null,
-            description: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
-            video_poster: "https://m.media-amazon.com/images/M/MV5BNzM4OTkzMjcxOF5BMl5BanBnXkFtZTgwMTkxMjI1MTI@._V1_.jpg",
+            description:
+                "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+            video_poster:
+                "https://m.media-amazon.com/images/M/MV5BNzM4OTkzMjcxOF5BMl5BanBnXkFtZTgwMTkxMjI1MTI@._V1_.jpg",
             actors: ["Keanu Reevens", "Laurance Fishburne", "Carrie-Anne Moss"],
             runtime: "2h 16m",
             ageRestriction: "15+",
@@ -111,9 +117,12 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+/>
 
 <main class:no-scrolling={$isFullDescription}>
     <!-- <iframe src="https://www.imdb.com/video/imdb/vi336244761/imdb/embed?autoplay=false&width=480" width="480" height="270" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe> -->
@@ -126,15 +135,93 @@
         <div>
             <span style="margin-left: 20px; font-size: 4em, ">neflix</span>
         </div>
-        <div>
-            <ul class="navMenu">
-                <li>Home</li>
-                <li>Series</li>
-                <li>Movies</li>
-                <li>New and popular</li>
-                <li>My list</li>
-            </ul>
+
+        <!-- class:dropdownActive={browseHover} -->
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover -->
+            
+        <div class="dropdown">
+            <button class="dropbtn">Browse ↓</button>
+            <div class="dropdown-content">
+                <ul class="navMenuDropdown">
+                    <li
+                        on:click={() => {
+                            rickRoll = true;
+                        }}
+                    >
+                        Home
+                    </li>
+                    <li
+                        on:click={() => {
+                            rickRoll = true;
+                        }}
+                    >
+                        Series
+                    </li>
+                    <li
+                        on:click={() => {
+                            rickRoll = true;
+                        }}
+                    >
+                        Movies
+                    </li>
+                    <li
+                        on:click={() => {
+                            rickRoll = true;
+                        }}
+                    >
+                        New and popular
+                    </li>
+                    <li
+                        on:click={() => {
+                            rickRoll = true;
+                        }}
+                    >
+                        My list
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <ul class="navMenu">
+            <li
+                on:click={() => {
+                    rickRoll = true;
+                }}
+            >
+                Home
+            </li>
+            <li
+                on:click={() => {
+                    rickRoll = true;
+                }}
+            >
+                Series
+            </li>
+            <li
+                on:click={() => {
+                    rickRoll = true;
+                }}
+            >
+                Movies
+            </li>
+            <li
+                on:click={() => {
+                    rickRoll = true;
+                }}
+            >
+                New and popular
+            </li>
+            <li
+                on:click={() => {
+                    rickRoll = true;
+                }}
+            >
+                My list
+            </li>
+        </ul>
+        <!-- </div> -->
+
+        <!-- https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4 -->
 
         <div class="navSearch">
             <span class="fa fa-search fa-2x" />
@@ -249,10 +336,43 @@
                     </div>
                 </div>
             {/each}
-        </div>        
+        </div>
     </div>
 
-    <div />
+    {#if rickRoll}
+        <Overlay
+            style="display:block;  margin-bottom: 10px ;"
+            active={rickRoll}
+            opacity={0.5}
+        >
+            <div
+                style="position: fixed; height: 100vh; width: 100vw; top: 0; left: 0;"
+            >
+                <div style="position: relative; width: 100%; max-height; 100%;">
+                    <video
+                        id="vid2"
+                        autoplay
+                        src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4"
+                        ><track kind="captions" /></video
+                    >
+                    <button
+                        style="position: absolute; top: 20px; left: 10px; color: white;"
+                        on:click={() => {
+                            rickRoll = false;
+                        }}>EXIT</button
+                    >
+                </div>
+            </div>
+        </Overlay>
+
+        <!-- <video id="vid2" autoplay src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4"><track kind="captions"></video> -->
+        <!-- <Player
+            video_arg={{
+                poster: movieInfo["shrek"]["poster"],
+                src: "https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4",
+            }}
+        /> -->
+    {/if}
 
     <!-- <div class="grid">
         {#each Array(100) as _, i}
@@ -341,7 +461,7 @@
                 }}
             />
         </div>
-    </Overlay>>
+    </Overlay>
 </main>
 
 <style>
@@ -354,7 +474,7 @@
         padding: 0;
         margin: 0;
         background-color: rgb(20, 20, 20);
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     h1 {
@@ -383,6 +503,50 @@
         gap: 15px;
     }
 
+    .dropdown{
+        position: relative;
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .navMenuDropdown {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding: 5px;
+        gap: 10px;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+
+    .navMenuDropdown li {
+        color: white;
+        background-color: rgb(19, 18, 18);
+        border-width: 1px;
+        border-color: beige;
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    li:hover {
+        background-color: rgb(43, 39, 39);
+        cursor: pointer;
+    }
+
     .navSearch {
         margin-left: auto;
         margin-right: 20px;
@@ -395,7 +559,6 @@
         padding-right: 5%;
         box-sizing: border-box;
     }
-
     .no-scrolling {
         height: 100%;
         overflow: hidden;
@@ -482,6 +645,12 @@
         margin-right: auto;
     }
 
+    #vid2 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
     #video {
         position: fixed;
         transition: all 0.3s ease-out;
@@ -534,7 +703,7 @@
         z-index: 100;
     }
 
-    .grid {
+    /* .grid {
         margin-top: 75px;
         display: grid;
         grid-row-gap: 50px;
@@ -552,7 +721,7 @@
         text-align: center;
         height: 80px;
         background-image: url("https://sveltejs.github.io/assets/caminandes-llamigos.jpg");
-        background-size: cover; /* Resize the background image to cover the entire container */
+        background-size: cover;  Resize the background image to cover the entire container 
     }
 
     #title {
@@ -566,7 +735,7 @@
         background: black;
         height: 100px;
         padding-left: calc(5% + 5px);
-    }
+    } */ 
 
     /** https://onaircode.com/html-css-custom-scrollbar-examples/ */
     ::-webkit-scrollbar {
@@ -583,4 +752,17 @@
         -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
         box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
     }
+
+
+    @media screen and (max-width: 650px) {
+        .header .navMenu {
+            display: none;
+        }
+
+        .header .dropdown{
+            display: inline-block;
+        }
+    }
+
+
 </style>

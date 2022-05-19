@@ -82,16 +82,6 @@
             document.exitFullscreen();
         }
 
-        //    if (!div.fullscreenElement &&    // alternative standard method
-        //     !div.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
-        //      if (div.requestFullscreen) {
-        //         div.requestFullscreen();
-        //      } else if (div.mozRequestFullScreen) {
-        //         div.mozRequestFullScreen();
-        //      } else if (div.webkitRequestFullscreen) {
-        //         div.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-        //      }
-        //     }
     }
 </script>
 
@@ -185,14 +175,18 @@
                     <p class="actors">
                         <b>Actors:</b>
                         {#each args["actors"] as value}
-                            <span>{value} </span>
+                            <span>{value}, </span>
                         {/each}
                     </p>
                     <p class="directors">
                         <b>Directors:</b>
                         {args["directors"]}
                     </p>
-                    <p class="genres"><b>Genres:</b> {args["genres"]}</p>
+                    <p class="genres"><b>Genres:</b>
+                        {#each args["genres"] as value}
+                            <span>{value}, </span>
+                        {/each}                        
+                    </p>
                 </div>
             </div>
         </div>
@@ -259,23 +253,22 @@
         appearance: none;
     }
 
-    @media sceen and (min-width: 2000px) {
+
+
+
+
+    @media screen and (max-width: 800px) {
+        .container {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+    @media screen and (min-width: 2000px) {
         .container {
             width: 50%;
         }
     }
 
-    @media screen and (max-width: 1920px) {
-        .container {
-            width: 70%;
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        .container {
-            width: 100%;
-        }
-    }
 
     progress::-webkit-progress-bar {
         background-color: rgba(0, 0, 0, 0.2);
