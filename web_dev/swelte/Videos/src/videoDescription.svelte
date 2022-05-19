@@ -193,10 +193,6 @@
         max-height: 100vh;
         position: relative;
         padding-bottom: 10px;
-        /* margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px */
         background-color: rgb(12, 12, 12);
         margin: 10px auto;
         overflow-y: auto;
@@ -246,11 +242,7 @@
         -webkit-appearance: none;
         appearance: none;
     }
-
-
-
-
-
+    
     @media screen and (max-width: 800px) {
         .container {
             width: 100%;

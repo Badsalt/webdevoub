@@ -110,7 +110,6 @@
         },
     };
 
-    // let indexSrc = {"0": "missionImposible", "" }
 </script>
 
 <link
@@ -215,8 +214,6 @@
                 My list
             </li>
         </ul>
-
-        <!-- https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4 -->
 
         <div class="navSearch">
             <span class="fa fa-search fa-2x" />
