@@ -125,7 +125,6 @@
 />
 
 <main class:no-scrolling={$isFullDescription}>
-    <!-- <iframe src="https://www.imdb.com/video/imdb/vi336244761/imdb/embed?autoplay=false&width=480" width="480" height="270" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe> -->
 
     {#if $isFullDescription}
         <VideoDescription args={movieInfo[$currentMovie]} />
@@ -135,10 +134,7 @@
         <div>
             <span style="margin-left: 20px; font-size: 4em, ">neflix</span>
         </div>
-
-        <!-- class:dropdownActive={browseHover} -->
-        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover -->
-            
+    
         <div class="dropdown">
             <button class="dropbtn">Browse ↓</button>
             <div class="dropdown-content">
@@ -219,7 +215,6 @@
                 My list
             </li>
         </ul>
-        <!-- </div> -->
 
         <!-- https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4 -->
 
@@ -229,13 +224,6 @@
     </div>
 
     <div class="container">
-        <!--
-            <div class="autoplayVideo">
-
-            <video controls autoplay poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg" src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"><track kind="captions" /></video>
-              
-        </div>
-        -->
 
         <h1 id="recomended">Recomended</h1>
 
@@ -365,25 +353,8 @@
             </div>
         </Overlay>
 
-        <!-- <video id="vid2" autoplay src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4"><track kind="captions"></video> -->
-        <!-- <Player
-            video_arg={{
-                poster: movieInfo["shrek"]["poster"],
-                src: "https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4",
-            }}
-        /> -->
     {/if}
 
-    <!-- <div class="grid">
-        {#each Array(100) as _, i}
-            <div
-                class="grid-item"
-                on:click={() => {
-                    video_player_is_active = true;
-                }}
-            />
-        {/each}
-    </div> -->
     <Overlay
         opacity={is_fullscreen ? 1 : 0.7}
         color="black"

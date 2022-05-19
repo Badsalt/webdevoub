@@ -2647,7 +2647,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (135:16) <Button                      size="small"                      class="secondary-color"                      style="z-index: 10"                      on:click={() => {                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          //     if (document.activeElement != document.body)                          //         document.activeElement.blur();                            //         let div = document.getElementById("vid");                          //     if (div.requestFullscreen) div.requestFullscreen();                          //     else if (div.webkitRequestFullscreen)                          //         div.webkitRequestFullscreen();                          //     else if (div.msRequestFullScreen)                          //         div.msRequestFullScreen();                          toggleFullScreen();                      }}                  >
+    // (135:16) <Button                      size="small"                      class="secondary-color"                      style="z-index: 10"                      on:click={() => {                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          //     if (document.activeElement != document.body)                          //         document.activeElement.blur();                            toggleFullScreen();                      }}                  >
     function create_default_slot_1$1(ctx) {
     	let i;
 
@@ -2655,7 +2655,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fa fa-arrows-alt svelte-1qwxdvi");
-    			add_location(i, file$1, 155, 20, 5894);
+    			add_location(i, file$1, 149, 20, 5466);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -2669,14 +2669,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(135:16) <Button                      size=\\\"small\\\"                      class=\\\"secondary-color\\\"                      style=\\\"z-index: 10\\\"                      on:click={() => {                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          //     if (document.activeElement != document.body)                          //         document.activeElement.blur();                            //         let div = document.getElementById(\\\"vid\\\");                          //     if (div.requestFullscreen) div.requestFullscreen();                          //     else if (div.webkitRequestFullscreen)                          //         div.webkitRequestFullscreen();                          //     else if (div.msRequestFullScreen)                          //         div.msRequestFullScreen();                          toggleFullScreen();                      }}                  >",
+    		source: "(135:16) <Button                      size=\\\"small\\\"                      class=\\\"secondary-color\\\"                      style=\\\"z-index: 10\\\"                      on:click={() => {                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          //     if (document.activeElement != document.body)                          //         document.activeElement.blur();                            toggleFullScreen();                      }}                  >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (177:24) {#each args["actors"] as value}
+    // (171:24) {#each args["actors"] as value}
     function create_each_block_1$1(ctx) {
     	let span;
     	let t0_value = /*value*/ ctx[18] + "";
@@ -2689,7 +2689,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text(", ");
     			attr_dev(span, "class", "svelte-1qwxdvi");
-    			add_location(span, file$1, 177, 28, 6637);
+    			add_location(span, file$1, 171, 28, 6209);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2708,14 +2708,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1$1.name,
     		type: "each",
-    		source: "(177:24) {#each args[\\\"actors\\\"] as value}",
+    		source: "(171:24) {#each args[\\\"actors\\\"] as value}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (186:24) {#each args["genres"] as value}
+    // (180:24) {#each args["genres"] as value}
     function create_each_block$1(ctx) {
     	let span;
     	let t0_value = /*value*/ ctx[18] + "";
@@ -2728,7 +2728,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text(", ");
     			attr_dev(span, "class", "svelte-1qwxdvi");
-    			add_location(span, file$1, 186, 28, 7016);
+    			add_location(span, file$1, 180, 28, 6588);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2747,7 +2747,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(186:24) {#each args[\\\"genres\\\"] as value}",
+    		source: "(180:24) {#each args[\\\"genres\\\"] as value}",
     		ctx
     	});
 
@@ -2953,31 +2953,31 @@ var app = (function () {
     			set_style(i, "position", "absolute");
     			set_style(i, "top", "0");
     			set_style(i, "right", "0");
-    			add_location(i, file$1, 160, 8, 5999);
+    			add_location(i, file$1, 154, 8, 5571);
     			set_style(p0, "color", "white");
     			attr_dev(p0, "class", "svelte-1qwxdvi");
-    			add_location(p0, file$1, 169, 16, 6322);
+    			add_location(p0, file$1, 163, 16, 5894);
     			attr_dev(div3, "class", "item svelte-1qwxdvi");
     			set_style(div3, "margin-left", "5px");
-    			add_location(div3, file$1, 168, 12, 6260);
+    			add_location(div3, file$1, 162, 12, 5832);
     			attr_dev(b1, "class", "svelte-1qwxdvi");
-    			add_location(b1, file$1, 175, 24, 6536);
+    			add_location(b1, file$1, 169, 24, 6108);
     			attr_dev(p1, "class", "actors svelte-1qwxdvi");
-    			add_location(p1, file$1, 174, 20, 6492);
+    			add_location(p1, file$1, 168, 20, 6064);
     			attr_dev(b2, "class", "svelte-1qwxdvi");
-    			add_location(b2, file$1, 181, 24, 6787);
+    			add_location(b2, file$1, 175, 24, 6359);
     			attr_dev(p2, "class", "directors svelte-1qwxdvi");
-    			add_location(p2, file$1, 180, 20, 6740);
+    			add_location(p2, file$1, 174, 20, 6312);
     			attr_dev(b3, "class", "svelte-1qwxdvi");
-    			add_location(b3, file$1, 184, 38, 6915);
+    			add_location(b3, file$1, 178, 38, 6487);
     			attr_dev(p3, "class", "genres svelte-1qwxdvi");
-    			add_location(p3, file$1, 184, 20, 6897);
+    			add_location(p3, file$1, 178, 20, 6469);
     			attr_dev(div4, "class", "flex-box-cast svelte-1qwxdvi");
-    			add_location(div4, file$1, 173, 16, 6443);
+    			add_location(div4, file$1, 167, 16, 6015);
     			attr_dev(div5, "class", "item svelte-1qwxdvi");
-    			add_location(div5, file$1, 172, 12, 6407);
+    			add_location(div5, file$1, 166, 12, 5979);
     			attr_dev(div6, "class", "flex-box svelte-1qwxdvi");
-    			add_location(div6, file$1, 167, 8, 6224);
+    			add_location(div6, file$1, 161, 8, 5796);
     			attr_dev(div7, "class", "container svelte-1qwxdvi");
     			add_location(div7, file$1, 92, 4, 2844);
     		},
@@ -3354,12 +3354,6 @@ var app = (function () {
     		// when space is clicked
     		//     if (document.activeElement != document.body)
     		//         document.activeElement.blur();
-    		//         let div = document.getElementById("vid");
-    		//     if (div.requestFullscreen) div.requestFullscreen();
-    		//     else if (div.webkitRequestFullscreen)
-    		//         div.webkitRequestFullscreen();
-    		//     else if (div.msRequestFullScreen)
-    		//         div.msRequestFullScreen();
     		toggleFullScreen();
     	};
 
@@ -3474,7 +3468,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (130:4) {#if $isFullDescription}
+    // (129:4) {#if $isFullDescription}
     function create_if_block_2(ctx) {
     	let videodescription;
     	let current;
@@ -3517,14 +3511,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(130:4) {#if $isFullDescription}",
+    		source: "(129:4) {#if $isFullDescription}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (243:12) {#each Array(10) as _, i}
+    // (231:12) {#each Array(10) as _, i}
     function create_each_block_1(ctx) {
     	let div5;
     	let div4;
@@ -3591,46 +3585,46 @@ var app = (function () {
     			t12 = space();
     			attr_dev(div0, "class", "item svelte-1dc8gqo");
     			set_style(div0, "background-image", "url(' " + Object.keys(/*movieInfo*/ ctx[5]).map(/*func*/ ctx[16])[Math.floor(/*i*/ ctx[28] / 2)] + "')");
-    			add_location(div0, file, 256, 24, 10686);
+    			add_location(div0, file, 244, 24, 9942);
     			attr_dev(i0, "class", "fa fa-play-circle svelte-1dc8gqo");
-    			add_location(i0, file, 268, 32, 11253);
+    			add_location(i0, file, 256, 32, 10509);
     			attr_dev(i1, "class", "fa fa-plus svelte-1dc8gqo");
-    			add_location(i1, file, 269, 32, 11318);
+    			add_location(i1, file, 257, 32, 10574);
     			attr_dev(i2, "class", "fa fa-thumbs-up svelte-1dc8gqo");
-    			add_location(i2, file, 270, 32, 11376);
+    			add_location(i2, file, 258, 32, 10632);
     			attr_dev(i3, "class", "fa fa-chevron-circle-down svelte-1dc8gqo");
     			set_style(i3, "margin-left", "auto");
     			set_style(i3, "margin-right", "10px ");
-    			add_location(i3, file, 271, 32, 11439);
+    			add_location(i3, file, 259, 32, 10695);
     			set_style(div1, "display", "flex");
     			set_style(div1, "flex-direction", "row");
     			set_style(div1, "gap", "10px");
     			attr_dev(div1, "class", "svelte-1dc8gqo");
-    			add_location(div1, file, 265, 28, 11097);
+    			add_location(div1, file, 253, 28, 10353);
     			set_style(span0, "color", "green");
     			attr_dev(span0, "class", "svelte-1dc8gqo");
-    			add_location(span0, file, 280, 32, 11950);
+    			add_location(span0, file, 268, 32, 11206);
     			attr_dev(span1, "class", "age-restriction svelte-1dc8gqo");
-    			add_location(span1, file, 281, 32, 12021);
+    			add_location(span1, file, 269, 32, 11277);
     			attr_dev(span2, "class", "svelte-1dc8gqo");
-    			add_location(span2, file, 286, 32, 12344);
+    			add_location(span2, file, 274, 32, 11600);
     			attr_dev(span3, "class", "resolution svelte-1dc8gqo");
-    			add_location(span3, file, 291, 32, 12636);
+    			add_location(span3, file, 279, 32, 11892);
     			set_style(div2, "display", "flex");
     			set_style(div2, "flex-direction", "row");
     			set_style(div2, "gap", "10px");
     			set_style(div2, "margin-top", "10px");
     			attr_dev(div2, "class", "svelte-1dc8gqo");
-    			add_location(div2, file, 276, 28, 11698);
+    			add_location(div2, file, 264, 28, 10954);
     			attr_dev(div3, "class", "short_description svelte-1dc8gqo");
-    			add_location(div3, file, 264, 24, 11036);
+    			add_location(div3, file, 252, 24, 10292);
     			attr_dev(div4, "class", "item-container svelte-1dc8gqo");
-    			add_location(div4, file, 246, 20, 10217);
+    			add_location(div4, file, 234, 20, 9473);
     			set_style(div5, "display", "flex");
     			set_style(div5, "flex-direction", "row");
     			set_style(div5, "align-items", "center");
     			attr_dev(div5, "class", "svelte-1dc8gqo");
-    			add_location(div5, file, 243, 16, 10088);
+    			add_location(div5, file, 231, 16, 9344);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div5, anchor);
@@ -3678,14 +3672,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(243:12) {#each Array(10) as _, i}",
+    		source: "(231:12) {#each Array(10) as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (303:12) {#each Array(10) as _, i}
+    // (291:12) {#each Array(10) as _, i}
     function create_each_block(ctx) {
     	let div5;
     	let span0;
@@ -3751,48 +3745,48 @@ var app = (function () {
     			t14 = space();
     			set_style(span0, "font-size", "5em");
     			attr_dev(span0, "class", "svelte-1dc8gqo");
-    			add_location(span0, file, 306, 20, 13080);
+    			add_location(span0, file, 294, 20, 12336);
     			attr_dev(div0, "class", "item svelte-1dc8gqo");
-    			add_location(div0, file, 313, 24, 13378);
+    			add_location(div0, file, 301, 24, 12634);
     			attr_dev(i0, "class", "fa fa-play-circle svelte-1dc8gqo");
-    			add_location(i0, file, 318, 32, 13641);
+    			add_location(i0, file, 306, 32, 12897);
     			attr_dev(i1, "class", "fa fa-plus svelte-1dc8gqo");
-    			add_location(i1, file, 319, 32, 13706);
+    			add_location(i1, file, 307, 32, 12962);
     			attr_dev(i2, "class", "fa fa-thumbs-up svelte-1dc8gqo");
-    			add_location(i2, file, 320, 32, 13764);
+    			add_location(i2, file, 308, 32, 13020);
     			attr_dev(i3, "class", "fa fa-chevron-circle-down svelte-1dc8gqo");
     			set_style(i3, "margin-left", "auto");
     			set_style(i3, "margin-right", "10px ");
-    			add_location(i3, file, 321, 32, 13827);
+    			add_location(i3, file, 309, 32, 13083);
     			set_style(div1, "display", "flex");
     			set_style(div1, "flex-direction", "row");
     			set_style(div1, "gap", "10px");
     			attr_dev(div1, "class", "svelte-1dc8gqo");
-    			add_location(div1, file, 315, 28, 13485);
+    			add_location(div1, file, 303, 28, 12741);
     			set_style(span1, "color", "green");
     			attr_dev(span1, "class", "svelte-1dc8gqo");
-    			add_location(span1, file, 329, 32, 14261);
+    			add_location(span1, file, 317, 32, 13517);
     			attr_dev(span2, "class", "age-restriction svelte-1dc8gqo");
-    			add_location(span2, file, 330, 32, 14332);
+    			add_location(span2, file, 318, 32, 13588);
     			attr_dev(span3, "class", "svelte-1dc8gqo");
-    			add_location(span3, file, 331, 32, 14406);
+    			add_location(span3, file, 319, 32, 13662);
     			attr_dev(span4, "class", "resolution svelte-1dc8gqo");
-    			add_location(span4, file, 332, 32, 14463);
+    			add_location(span4, file, 320, 32, 13719);
     			set_style(div2, "display", "flex");
     			set_style(div2, "flex-direction", "row");
     			set_style(div2, "gap", "10px");
     			set_style(div2, "margin-top", "10px");
     			attr_dev(div2, "class", "svelte-1dc8gqo");
-    			add_location(div2, file, 326, 28, 14086);
+    			add_location(div2, file, 314, 28, 13342);
     			attr_dev(div3, "class", "short_description svelte-1dc8gqo");
-    			add_location(div3, file, 314, 24, 13424);
+    			add_location(div3, file, 302, 24, 12680);
     			attr_dev(div4, "class", "item-container svelte-1dc8gqo");
-    			add_location(div4, file, 307, 20, 13146);
+    			add_location(div4, file, 295, 20, 12402);
     			set_style(div5, "display", "flex");
     			set_style(div5, "flex-direction", "row");
     			set_style(div5, "align-items", "center");
     			attr_dev(div5, "class", "svelte-1dc8gqo");
-    			add_location(div5, file, 303, 16, 12951);
+    			add_location(div5, file, 291, 16, 12207);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div5, anchor);
@@ -3839,14 +3833,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(303:12) {#each Array(10) as _, i}",
+    		source: "(291:12) {#each Array(10) as _, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (342:4) {#if rickRoll}
+    // (330:4) {#if rickRoll}
     function create_if_block_1(ctx) {
     	let overlay;
     	let current;
@@ -3898,14 +3892,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(342:4) {#if rickRoll}",
+    		source: "(330:4) {#if rickRoll}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (343:8) <Overlay              style="display:block;  margin-bottom: 10px ;"              active={rickRoll}              opacity={0.5}          >
+    // (331:8) <Overlay              style="display:block;  margin-bottom: 10px ;"              active={rickRoll}              opacity={0.5}          >
     function create_default_slot_4(ctx) {
     	let div1;
     	let div0;
@@ -3928,28 +3922,28 @@ var app = (function () {
     			button.textContent = "EXIT";
     			attr_dev(track, "kind", "captions");
     			attr_dev(track, "class", "svelte-1dc8gqo");
-    			add_location(track, file, 355, 25, 15309);
+    			add_location(track, file, 343, 25, 14565);
     			attr_dev(video, "id", "vid2");
     			video.autoplay = true;
     			if (!src_url_equal(video.src, video_src_value = "https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4")) attr_dev(video, "src", video_src_value);
     			attr_dev(video, "class", "svelte-1dc8gqo");
-    			add_location(video, file, 351, 20, 15059);
+    			add_location(video, file, 339, 20, 14315);
     			set_style(button, "position", "absolute");
     			set_style(button, "top", "20px");
     			set_style(button, "left", "10px");
     			set_style(button, "color", "white");
     			attr_dev(button, "class", "svelte-1dc8gqo");
-    			add_location(button, file, 357, 20, 15386);
+    			add_location(button, file, 345, 20, 14642);
     			attr_dev(div0, "style", "position: relative; width: 100%; max-height; 100%;");
     			attr_dev(div0, "class", "svelte-1dc8gqo");
-    			add_location(div0, file, 350, 16, 14973);
+    			add_location(div0, file, 338, 16, 14229);
     			set_style(div1, "position", "fixed");
     			set_style(div1, "height", "100vh");
     			set_style(div1, "width", "100vw");
     			set_style(div1, "top", "0");
     			set_style(div1, "left", "0");
     			attr_dev(div1, "class", "svelte-1dc8gqo");
-    			add_location(div1, file, 347, 12, 14848);
+    			add_location(div1, file, 335, 12, 14104);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -3976,14 +3970,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(343:8) <Overlay              style=\\\"display:block;  margin-bottom: 10px ;\\\"              active={rickRoll}              opacity={0.5}          >",
+    		source: "(331:8) <Overlay              style=\\\"display:block;  margin-bottom: 10px ;\\\"              active={rickRoll}              opacity={0.5}          >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (403:16) <Button                      class="error-color"                      size="small"                      on:click={() => {                          video_player_is_active = false;                      }}                  >
+    // (374:16) <Button                      class="error-color"                      size="small"                      on:click={() => {                          video_player_is_active = false;                      }}                  >
     function create_default_slot_3(ctx) {
     	let t;
 
@@ -4003,14 +3997,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(403:16) <Button                      class=\\\"error-color\\\"                      size=\\\"small\\\"                      on:click={() => {                          video_player_is_active = false;                      }}                  >",
+    		source: "(374:16) <Button                      class=\\\"error-color\\\"                      size=\\\"small\\\"                      on:click={() => {                          video_player_is_active = false;                      }}                  >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (414:16) <Button                      size="small"                      class="primary-color"                      on:click={() => {                          is_fullscreen = !is_fullscreen;                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          if (document.activeElement != document.body)                              document.activeElement.blur();                      }}                  >
+    // (385:16) <Button                      size="small"                      class="primary-color"                      on:click={() => {                          is_fullscreen = !is_fullscreen;                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          if (document.activeElement != document.body)                              document.activeElement.blur();                      }}                  >
     function create_default_slot_2(ctx) {
     	let t_value = (/*is_fullscreen*/ ctx[1] ? "Minimize" : "Theatre Mode") + "";
     	let t;
@@ -4034,14 +4028,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(414:16) <Button                      size=\\\"small\\\"                      class=\\\"primary-color\\\"                      on:click={() => {                          is_fullscreen = !is_fullscreen;                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          if (document.activeElement != document.body)                              document.activeElement.blur();                      }}                  >",
+    		source: "(385:16) <Button                      size=\\\"small\\\"                      class=\\\"primary-color\\\"                      on:click={() => {                          is_fullscreen = !is_fullscreen;                          // do not focus the fullscreenbutton if clicked                          // this is because otherwise clicking space will cause                          // the video player to maximize/minimize instead of pause/play                          // when space is clicked                          if (document.activeElement != document.body)                              document.activeElement.blur();                      }}                  >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (431:12) {#if is_fullscreen}
+    // (402:12) {#if is_fullscreen}
     function create_if_block(ctx) {
     	let div;
     	let button;
@@ -4065,7 +4059,7 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			attr_dev(div, "id", "gigascreen");
     			attr_dev(div, "class", "svelte-1dc8gqo");
-    			add_location(div, file, 431, 16, 18074);
+    			add_location(div, file, 402, 16, 16580);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4100,14 +4094,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(431:12) {#if is_fullscreen}",
+    		source: "(402:12) {#if is_fullscreen}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (433:20) <Button                          size="small"                          class="secondary-color"                          on:click={() => {                              // do not focus the fullscreenbutton if clicked                              // this is because otherwise clicking space will cause                              // the video player to maximize/minimize instead of pause/play                              // when space is clicked                              if (document.activeElement != document.body)                                  document.activeElement.blur();                                let div = document.getElementById("vid");                              if (div.requestFullscreen) div.requestFullscreen();                              else if (div.webkitRequestFullscreen)                                  div.webkitRequestFullscreen();                              else if (div.msRequestFullScreen)                                  div.msRequestFullScreen();                          }}                      >
+    // (404:20) <Button                          size="small"                          class="secondary-color"                          on:click={() => {                              // do not focus the fullscreenbutton if clicked                              // this is because otherwise clicking space will cause                              // the video player to maximize/minimize instead of pause/play                              // when space is clicked                              if (document.activeElement != document.body)                                  document.activeElement.blur();                                let div = document.getElementById("vid");                              if (div.requestFullscreen) div.requestFullscreen();                              else if (div.webkitRequestFullscreen)                                  div.webkitRequestFullscreen();                              else if (div.msRequestFullScreen)                                  div.msRequestFullScreen();                          }}                      >
     function create_default_slot_1(ctx) {
     	let t_value = "Gigascreen" + "";
     	let t;
@@ -4129,14 +4123,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(433:20) <Button                          size=\\\"small\\\"                          class=\\\"secondary-color\\\"                          on:click={() => {                              // do not focus the fullscreenbutton if clicked                              // this is because otherwise clicking space will cause                              // the video player to maximize/minimize instead of pause/play                              // when space is clicked                              if (document.activeElement != document.body)                                  document.activeElement.blur();                                let div = document.getElementById(\\\"vid\\\");                              if (div.requestFullscreen) div.requestFullscreen();                              else if (div.webkitRequestFullscreen)                                  div.webkitRequestFullscreen();                              else if (div.msRequestFullScreen)                                  div.msRequestFullScreen();                          }}                      >",
+    		source: "(404:20) <Button                          size=\\\"small\\\"                          class=\\\"secondary-color\\\"                          on:click={() => {                              // do not focus the fullscreenbutton if clicked                              // this is because otherwise clicking space will cause                              // the video player to maximize/minimize instead of pause/play                              // when space is clicked                              if (document.activeElement != document.body)                                  document.activeElement.blur();                                let div = document.getElementById(\\\"vid\\\");                              if (div.requestFullscreen) div.requestFullscreen();                              else if (div.webkitRequestFullscreen)                                  div.webkitRequestFullscreen();                              else if (div.msRequestFullScreen)                                  div.msRequestFullScreen();                          }}                      >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (387:4) <Overlay          opacity={is_fullscreen ? 1 : 0.7}          color="black"          active={video_player_is_active}          on:click={() => {              video_player_is_active = false;          }}      >
+    // (358:4) <Overlay          opacity={is_fullscreen ? 1 : 0.7}          color="black"          active={video_player_is_active}          on:click={() => {              video_player_is_active = false;          }}      >
     function create_default_slot(ctx) {
     	let div2;
     	let div0;
@@ -4200,14 +4194,14 @@ var app = (function () {
     			create_component(player.$$.fragment);
     			attr_dev(div0, "id", "close");
     			attr_dev(div0, "class", "svelte-1dc8gqo");
-    			add_location(div0, file, 401, 12, 16881);
+    			add_location(div0, file, 372, 12, 15387);
     			attr_dev(div1, "id", "fullscreen");
     			attr_dev(div1, "class", "svelte-1dc8gqo");
-    			add_location(div1, file, 412, 12, 17224);
+    			add_location(div1, file, 383, 12, 15730);
     			attr_dev(div2, "id", "video");
     			attr_dev(div2, "class", "svelte-1dc8gqo");
     			toggle_class(div2, "fullscreen", /*is_fullscreen*/ ctx[1] == true);
-    			add_location(div2, file, 394, 8, 16688);
+    			add_location(div2, file, 365, 8, 15194);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -4300,7 +4294,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(387:4) <Overlay          opacity={is_fullscreen ? 1 : 0.7}          color=\\\"black\\\"          active={video_player_is_active}          on:click={() => {              video_player_is_active = false;          }}      >",
+    		source: "(358:4) <Overlay          opacity={is_fullscreen ? 1 : 0.7}          color=\\\"black\\\"          active={video_player_is_active}          on:click={() => {              video_player_is_active = false;          }}      >",
     		ctx
     	});
 
@@ -4499,56 +4493,56 @@ var app = (function () {
     			set_style(span0, "margin-left", "20px");
     			set_style(span0, "font-size", "4em, ");
     			attr_dev(span0, "class", "svelte-1dc8gqo");
-    			add_location(span0, file, 135, 12, 6829);
+    			add_location(span0, file, 134, 12, 6576);
     			attr_dev(div0, "class", "svelte-1dc8gqo");
-    			add_location(div0, file, 134, 8, 6810);
+    			add_location(div0, file, 133, 8, 6557);
     			attr_dev(button, "class", "dropbtn svelte-1dc8gqo");
-    			add_location(button, file, 142, 12, 7121);
+    			add_location(button, file, 138, 12, 6707);
     			attr_dev(li0, "class", "svelte-1dc8gqo");
-    			add_location(li0, file, 145, 20, 7274);
+    			add_location(li0, file, 141, 20, 6860);
     			attr_dev(li1, "class", "svelte-1dc8gqo");
-    			add_location(li1, file, 152, 20, 7496);
+    			add_location(li1, file, 148, 20, 7082);
     			attr_dev(li2, "class", "svelte-1dc8gqo");
-    			add_location(li2, file, 159, 20, 7720);
+    			add_location(li2, file, 155, 20, 7306);
     			attr_dev(li3, "class", "svelte-1dc8gqo");
-    			add_location(li3, file, 166, 20, 7944);
+    			add_location(li3, file, 162, 20, 7530);
     			attr_dev(li4, "class", "svelte-1dc8gqo");
-    			add_location(li4, file, 173, 20, 8177);
+    			add_location(li4, file, 169, 20, 7763);
     			attr_dev(ul0, "class", "navMenuDropdown svelte-1dc8gqo");
-    			add_location(ul0, file, 144, 16, 7224);
+    			add_location(ul0, file, 140, 16, 6810);
     			attr_dev(div1, "class", "dropdown-content svelte-1dc8gqo");
-    			add_location(div1, file, 143, 12, 7176);
+    			add_location(div1, file, 139, 12, 6762);
     			attr_dev(div2, "class", "dropdown svelte-1dc8gqo");
-    			add_location(div2, file, 141, 8, 7085);
+    			add_location(div2, file, 137, 8, 6671);
     			attr_dev(li5, "class", "svelte-1dc8gqo");
-    			add_location(li5, file, 185, 12, 8485);
+    			add_location(li5, file, 181, 12, 8071);
     			attr_dev(li6, "class", "svelte-1dc8gqo");
-    			add_location(li6, file, 192, 12, 8651);
+    			add_location(li6, file, 188, 12, 8237);
     			attr_dev(li7, "class", "svelte-1dc8gqo");
-    			add_location(li7, file, 199, 12, 8819);
+    			add_location(li7, file, 195, 12, 8405);
     			attr_dev(li8, "class", "svelte-1dc8gqo");
-    			add_location(li8, file, 206, 12, 8987);
+    			add_location(li8, file, 202, 12, 8573);
     			attr_dev(li9, "class", "svelte-1dc8gqo");
-    			add_location(li9, file, 213, 12, 9164);
+    			add_location(li9, file, 209, 12, 8750);
     			attr_dev(ul1, "class", "navMenu svelte-1dc8gqo");
-    			add_location(ul1, file, 184, 8, 8451);
+    			add_location(ul1, file, 180, 8, 8037);
     			attr_dev(span1, "class", "fa fa-search fa-2x svelte-1dc8gqo");
-    			add_location(span1, file, 226, 12, 9545);
+    			add_location(span1, file, 221, 12, 9106);
     			attr_dev(div3, "class", "navSearch svelte-1dc8gqo");
-    			add_location(div3, file, 225, 8, 9508);
+    			add_location(div3, file, 220, 8, 9069);
     			attr_dev(div4, "class", "header svelte-1dc8gqo");
-    			add_location(div4, file, 133, 4, 6780);
+    			add_location(div4, file, 132, 4, 6527);
     			attr_dev(h10, "id", "recomended");
     			attr_dev(h10, "class", "svelte-1dc8gqo");
-    			add_location(h10, file, 239, 8, 9956);
+    			add_location(h10, file, 227, 8, 9212);
     			attr_dev(div5, "class", "flex-container svelte-1dc8gqo");
-    			add_location(div5, file, 241, 8, 10003);
+    			add_location(div5, file, 229, 8, 9259);
     			attr_dev(h11, "class", "svelte-1dc8gqo");
-    			add_location(h11, file, 299, 8, 12839);
+    			add_location(h11, file, 287, 8, 12095);
     			attr_dev(div6, "class", "flex-container svelte-1dc8gqo");
-    			add_location(div6, file, 301, 8, 12866);
+    			add_location(div6, file, 289, 8, 12122);
     			attr_dev(div7, "class", "container svelte-1dc8gqo");
-    			add_location(div7, file, 230, 4, 9616);
+    			add_location(div7, file, 225, 4, 9177);
     			attr_dev(main, "class", "svelte-1dc8gqo");
     			toggle_class(main, "no-scrolling", /*$isFullDescription*/ ctx[3]);
     			add_location(main, file, 126, 0, 6368);

@@ -144,12 +144,6 @@
                         //     if (document.activeElement != document.body)
                         //         document.activeElement.blur();
 
-                        //         let div = document.getElementById("vid");
-                        //     if (div.requestFullscreen) div.requestFullscreen();
-                        //     else if (div.webkitRequestFullscreen)
-                        //         div.webkitRequestFullscreen();
-                        //     else if (div.msRequestFullScreen)
-                        //         div.msRequestFullScreen();
                         toggleFullScreen();
                     }}
                 >
