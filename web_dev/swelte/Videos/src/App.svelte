@@ -4,6 +4,7 @@
     import colors from "svelte-materialify/src/utils/colors";
     import VideoDescription from "./videoDescription.svelte";
     import { isFullDescription, currentMovie } from "./stores.js";
+    import { fade } from "svelte/transition";
 
     let video_player_is_active = false;
     let is_fullscreen = false;
@@ -108,8 +109,9 @@
             directors: ["Lana Wachowski", "Lilly Wachowski"],
             genres: ["Action", "Sci-Fi"],
         },
-    };
 
+        
+    };
 </script>
 
 <link
@@ -124,34 +126,31 @@
 />
 
 <main class:no-scrolling={$isFullDescription}>
-
     {#if $isFullDescription}
         <VideoDescription args={movieInfo[$currentMovie]} />
     {/if}
 
     <div class="header">
         <div>
-            <span style="margin-left: 20px; font-size: 4em, ">neflix</span>
+            <span
+                style="margin-left: 20px; font-size: 4em; color: rgb(219,0,0) ; "
+                >NEFLIX</span
+            >
         </div>
-    
+
         <div class="dropdown">
             <button class="dropbtn">Browse ↓</button>
             <div class="dropdown-content">
                 <ul class="navMenuDropdown">
                     <li
                         on:click={() => {
-                            rickRoll = true;
+                            document.main.scrollTop =
+                                document.documentElement.scrollTop = 0;
                         }}
                     >
                         Home
                     </li>
-                    <li
-                        on:click={() => {
-                            rickRoll = true;
-                        }}
-                    >
-                        Series
-                    </li>
+                    <li><a href="#series" style="text-decoration: none; color:white">Series</a></li>
                     <li
                         on:click={() => {
                             rickRoll = true;
@@ -180,18 +179,13 @@
         <ul class="navMenu">
             <li
                 on:click={() => {
-                    rickRoll = true;
+                    document.main.scrollTop =
+                        document.documentElement.scrollTop = 0;
                 }}
             >
                 Home
             </li>
-            <li
-                on:click={() => {
-                    rickRoll = true;
-                }}
-            >
-                Series
-            </li>
+            <li><a href="#series" style="text-decoration: none; color:white">Series</a></li>
             <li
                 on:click={() => {
                     rickRoll = true;
@@ -221,7 +215,6 @@
     </div>
 
     <div class="container">
-
         <h1 id="recomended">Recomended</h1>
 
         <div class="flex-container">
@@ -296,8 +289,8 @@
                             video_player_is_active = true;
                         }}
                     >
-                        <div class="item" />
-                        <div class="short_description">
+                        <div in:fade class="item" />
+                        <div class="short_description" in:fade>
                             <div
                                 style="display: flex; flex-direction: row; gap: 10px"
                             >
@@ -322,114 +315,157 @@
                 </div>
             {/each}
         </div>
-    </div>
 
-    {#if rickRoll}
-        <Overlay
-            style="display:block;  margin-bottom: 10px ;"
-            active={rickRoll}
-            opacity={0.5}
-        >
-            <div
-                style="position: fixed; height: 100vh; width: 100vw; top: 0; left: 0;"
-            >
-                <div style="position: relative; width: 100%; max-height; 100%;">
-                    <video
-                        id="vid2"
-                        autoplay
-                        src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4"
-                        ><track kind="captions" /></video
+        <div id="series">
+            <h1>Series</h1>
+            <div class="flex-container">
+                {#each Array(10) as _, i}
+                    <div
+                        style="display: flex; flex-direction:row; align-items: center"
                     >
-                    <button
-                        style="position: absolute; top: 20px; left: 10px; color: white;"
-                        on:click={() => {
-                            rickRoll = false;
-                        }}>EXIT</button
-                    >
-                </div>
+                        <div
+                            class="item-container"
+                            on:click={() => {
+                                video_player_is_active = false;
+                            }}
+                        >
+                            <div in:fade class="item" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODFhZjAwNjEtZDFjNi00ZTEyLThkNzUtMjZmOWM2YjQwODFmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_FMjpg_UX1000_.jpg);" />
+                            <div class="short_description" in:fade>
+                                <div
+                                    style="display: flex; flex-direction: row; gap: 10px"
+                                >
+                                    <i class="fa fa-play-circle" />
+                                    <i class="fa fa-plus" />
+                                    <i class="fa fa-thumbs-up" />
+                                    <i
+                                        class="fa fa-chevron-circle-down"
+                                        style="margin-left: auto; margin-right: 10px "
+                                    />
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: row; gap: 10px; margin-top: 10px;"
+                                >
+                                    <span style="color: green">NEW</span>
+                                    <span class="age-restriction">16+</span>
+                                    <span>5 Seasions</span>
+                                    <span class="resolution">HD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {/each}
             </div>
-        </Overlay>
+        </div>
 
-    {/if}
+        {#if rickRoll}
+            <Overlay
+                style="display:block;  margin-bottom: 10px ;"
+                active={rickRoll}
+                opacity={0.5}
+            >
+                <div
+                    style="position: fixed; height: 100vh; width: 100vw; top: 0; left: 0;"
+                >
+                    <div
+                        style="position: relative; width: 100%; max-height; 100%;"
+                    >
+                        <video
+                            id="vid2"
+                            autoplay
+                            src="https://ia801602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4"
+                            ><track kind="captions" /></video
+                        >
+                        <button
+                            style="position: absolute; top: 20px; left: 10px; color: white;"
+                            on:click={() => {
+                                rickRoll = false;
+                            }}>EXIT</button
+                        >
+                    </div>
+                </div>
+            </Overlay>
+        {/if}
 
-    <Overlay
-        opacity={is_fullscreen ? 1 : 0.7}
-        color="black"
-        active={video_player_is_active}
-        on:click={() => {
-            video_player_is_active = false;
-        }}
-    >
-        <div
-            id="video"
-            class:fullscreen={is_fullscreen == true}
-            on:click={(e) => {
-                e.stopPropagation();
+        <Overlay
+            opacity={is_fullscreen ? 1 : 0.7}
+            color="black"
+            active={video_player_is_active}
+            on:click={() => {
+                video_player_is_active = false;
             }}
         >
-            <div id="close">
-                <Button
-                    class="error-color"
-                    size="small"
-                    on:click={() => {
-                        video_player_is_active = false;
-                    }}
-                >
-                    Close
-                </Button>
-            </div>
-            <div id="fullscreen">
-                <Button
-                    size="small"
-                    class="primary-color"
-                    on:click={() => {
-                        is_fullscreen = !is_fullscreen;
-                        // do not focus the fullscreenbutton if clicked
-                        // this is because otherwise clicking space will cause
-                        // the video player to maximize/minimize instead of pause/play
-                        // when space is clicked
-                        if (document.activeElement != document.body)
-                            document.activeElement.blur();
-                    }}
-                >
-                    {is_fullscreen ? "Minimize" : "Theatre Mode"}
-                </Button>
-            </div>
-
-            {#if is_fullscreen}
-                <div id="gigascreen">
+            <div
+                id="video"
+                class:fullscreen={is_fullscreen == true}
+                on:click={(e) => {
+                    e.stopPropagation();
+                }}
+            >
+                <div id="close">
+                    <Button
+                        class="error-color"
+                        size="small"
+                        on:click={() => {
+                            video_player_is_active = false;
+                        }}
+                    >
+                        Close
+                    </Button>
+                </div>
+                <div id="fullscreen">
                     <Button
                         size="small"
-                        class="secondary-color"
+                        class="primary-color"
                         on:click={() => {
+                            is_fullscreen = !is_fullscreen;
                             // do not focus the fullscreenbutton if clicked
                             // this is because otherwise clicking space will cause
                             // the video player to maximize/minimize instead of pause/play
                             // when space is clicked
                             if (document.activeElement != document.body)
                                 document.activeElement.blur();
-
-                            let div = document.getElementById("vid");
-                            if (div.requestFullscreen) div.requestFullscreen();
-                            else if (div.webkitRequestFullscreen)
-                                div.webkitRequestFullscreen();
-                            else if (div.msRequestFullScreen)
-                                div.msRequestFullScreen();
                         }}
                     >
-                        {"Gigascreen"}
+                        {is_fullscreen ? "Minimize" : "Theatre Mode"}
                     </Button>
                 </div>
-            {/if}
 
-            <Player
-                video_arg={{
+                {#if is_fullscreen}
+                    <div id="gigascreen">
+                        <Button
+                            size="small"
+                            class="secondary-color"
+                            on:click={() => {
+                                // do not focus the fullscreenbutton if clicked
+                                // this is because otherwise clicking space will cause
+                                // the video player to maximize/minimize instead of pause/play
+                                // when space is clicked
+                                if (document.activeElement != document.body)
+                                    document.activeElement.blur();
+
+                                let div = document.getElementById("vid");
+                                if (div.requestFullscreen)
+                                    div.requestFullscreen();
+                                else if (div.webkitRequestFullscreen)
+                                    div.webkitRequestFullscreen();
+                                else if (div.msRequestFullScreen)
+                                    div.msRequestFullScreen();
+                            }}
+                        >
+                            {"Gigascreen"}
+                        </Button>
+                    </div>
+                {/if}
+
+                <Player
+                    video_arg={{
                         src: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
                         poster: "https://sveltejs.github.io/assets/caminandes-llamigos.jpg",
-                }}
-            />
-        </div>
-    </Overlay>
+                    }}
+                />
+            </div>
+        </Overlay>
+    </div>
 </main>
 
 <style>
@@ -471,7 +507,7 @@
         gap: 15px;
     }
 
-    .dropdown{
+    .dropdown {
         position: relative;
         display: none;
     }
@@ -481,10 +517,9 @@
         position: absolute;
         background-color: #f1f1f1;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
-
 
     .dropdown:hover .dropdown-content {
         display: block;
@@ -559,12 +594,16 @@
             0 6px 20px 4px rgba(0, 0, 0, 0.19);
         height: 225px;
         border: grey solid;
+        transition: all 0.3s;
     }
 
-    .flex-container .item-container .short_description {
-        display: none;
+    .short_description {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
         margin: 0 10px;
-        height: 50px;
     }
 
     .flex-container .item-container:hover {
@@ -573,8 +612,11 @@
     }
 
     .flex-container .item-container:hover .short_description {
-        display: flex;
-        flex-direction: column;
+        transition: all 0.3s;
+        height: 75px;
+        opacity: 1;
+        overflow: hidden;
+        transition-delay: 0.3s;
     }
 
     .flex-container .item {
@@ -602,15 +644,7 @@
     .resolution {
         border: rgba(255, 255, 255, 0.656) 1px solid;
         padding: 0 5px;
-    }
-
-    .autoplayVideo {
-        margin-top: 10px;
-        height: 100%;
-        width: 100%;
-        background-color: green;
-        margin-left: auto;
-        margin-right: auto;
+        border-radius: 5px;
     }
 
     #vid2 {
@@ -703,7 +737,7 @@
         background: black;
         height: 100px;
         padding-left: calc(5% + 5px);
-    } */ 
+    } */
 
     /** https://onaircode.com/html-css-custom-scrollbar-examples/ */
     ::-webkit-scrollbar {
@@ -721,16 +755,13 @@
         box-shadow: rgba(0, 0, 0, 0.12) 0 3px 13px 1px;
     }
 
-
     @media screen and (max-width: 650px) {
         .header .navMenu {
             display: none;
         }
 
-        .header .dropdown{
+        .header .dropdown {
             display: inline-block;
         }
     }
-
-
 </style>
