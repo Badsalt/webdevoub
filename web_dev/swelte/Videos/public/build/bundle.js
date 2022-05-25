@@ -2655,7 +2655,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fa fa-arrows-alt svelte-q80i56");
-    			add_location(i, file$1, 154, 20, 5676);
+    			add_location(i, file$1, 154, 20, 5690);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -2689,7 +2689,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text(", ");
     			attr_dev(span, "class", "svelte-q80i56");
-    			add_location(span, file$1, 187, 32, 7055);
+    			add_location(span, file$1, 187, 32, 7069);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2726,7 +2726,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "svelte-q80i56");
-    			add_location(span, file$1, 185, 28, 6964);
+    			add_location(span, file$1, 185, 28, 6978);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2817,7 +2817,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text(", ");
     			attr_dev(span, "class", "svelte-q80i56");
-    			add_location(span, file$1, 201, 32, 7680);
+    			add_location(span, file$1, 201, 32, 7694);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -2854,7 +2854,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "svelte-q80i56");
-    			add_location(span, file$1, 199, 28, 7589);
+    			add_location(span, file$1, 199, 28, 7603);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -3122,30 +3122,31 @@ var app = (function () {
     			add_location(span0, file$1, 98, 8, 2954);
     			attr_dev(track, "kind", "captions");
     			attr_dev(track, "class", "svelte-q80i56");
-    			add_location(track, file$1, 113, 16, 3735);
+    			add_location(track, file$1, 113, 16, 3749);
     			if (!src_url_equal(video.src, video_src_value = /*args*/ ctx[0]["video_src"])) attr_dev(video, "src", video_src_value);
     			attr_dev(video, "poster", video_poster_value = /*args*/ ctx[0]["video_poster"]);
     			set_style(video, "max-width", "100%");
     			set_style(video, "width", "100%");
+    			set_style(video, "height", "100%");
     			set_style(video, "cursor", "pointer");
     			attr_dev(video, "class", "svelte-q80i56");
     			if (/*duration*/ ctx[2] === void 0) add_render_callback(() => /*video_durationchange_handler*/ ctx[11].call(video));
     			add_location(video, file$1, 103, 12, 3281);
     			attr_dev(span1, "class", "time svelte-q80i56");
-    			add_location(span1, file$1, 125, 20, 4236);
+    			add_location(span1, file$1, 125, 20, 4250);
     			progress.value = progress_value_value = /*time*/ ctx[1] / /*duration*/ ctx[2] || 0;
     			attr_dev(progress, "class", "svelte-q80i56");
-    			add_location(progress, file$1, 126, 20, 4298);
+    			add_location(progress, file$1, 126, 20, 4312);
     			attr_dev(span2, "class", "time svelte-q80i56");
     			set_style(span2, "margin-right", "10%");
-    			add_location(span2, file$1, 134, 24, 4765);
+    			add_location(span2, file$1, 134, 24, 4779);
     			attr_dev(span3, "class", "svelte-q80i56");
-    			add_location(span3, file$1, 133, 20, 4733);
+    			add_location(span3, file$1, 133, 20, 4747);
     			attr_dev(div0, "class", "info svelte-q80i56");
-    			add_location(div0, file$1, 124, 16, 4196);
+    			add_location(div0, file$1, 124, 16, 4210);
     			attr_dev(div1, "class", "controls svelte-q80i56");
     			set_style(div1, "opacity", /*duration*/ ctx[2] && /*showControls*/ ctx[4] ? 1 : 0);
-    			add_location(div1, file$1, 116, 12, 3798);
+    			add_location(div1, file$1, 116, 12, 3812);
     			attr_dev(div2, "class", "video-container svelte-q80i56");
     			attr_dev(div2, "id", "vid");
     			add_location(div2, file$1, 102, 8, 3229);
@@ -3155,47 +3156,47 @@ var app = (function () {
     			set_style(i, "top", "5px");
     			set_style(i, "right", "5px");
     			set_style(i, "cursor", "pointer");
-    			add_location(i, file$1, 159, 8, 5781);
+    			add_location(i, file$1, 159, 8, 5795);
     			set_style(span4, "color", "green");
     			attr_dev(span4, "class", "svelte-q80i56");
-    			add_location(span4, file$1, 171, 20, 6285);
+    			add_location(span4, file$1, 171, 20, 6299);
     			attr_dev(span5, "class", "age-restriction svelte-q80i56");
-    			add_location(span5, file$1, 172, 20, 6344);
+    			add_location(span5, file$1, 172, 20, 6358);
     			attr_dev(span6, "class", "svelte-q80i56");
-    			add_location(span6, file$1, 173, 20, 6427);
+    			add_location(span6, file$1, 173, 20, 6441);
     			attr_dev(span7, "class", "resolution svelte-q80i56");
-    			add_location(span7, file$1, 174, 20, 6479);
+    			add_location(span7, file$1, 174, 20, 6493);
     			set_style(div3, "display", "flex");
     			set_style(div3, "flex-direction", "row");
     			set_style(div3, "gap", "10px");
     			set_style(div3, "margin-top", "10px");
     			set_style(div3, "margin-bottom", "10px");
     			attr_dev(div3, "class", "svelte-q80i56");
-    			add_location(div3, file$1, 168, 16, 6125);
+    			add_location(div3, file$1, 168, 16, 6139);
     			set_style(p0, "color", "white");
     			attr_dev(p0, "class", "svelte-q80i56");
-    			add_location(p0, file$1, 176, 16, 6555);
+    			add_location(p0, file$1, 176, 16, 6569);
     			attr_dev(div4, "class", "item svelte-q80i56");
     			set_style(div4, "margin-left", "5px");
-    			add_location(div4, file$1, 167, 12, 6063);
+    			add_location(div4, file$1, 167, 12, 6077);
     			attr_dev(b1, "class", "svelte-q80i56");
-    			add_location(b1, file$1, 182, 24, 6769);
+    			add_location(b1, file$1, 182, 24, 6783);
     			attr_dev(p1, "class", "actors svelte-q80i56");
-    			add_location(p1, file$1, 181, 20, 6725);
+    			add_location(p1, file$1, 181, 20, 6739);
     			attr_dev(b2, "class", "svelte-q80i56");
-    			add_location(b2, file$1, 192, 24, 7240);
+    			add_location(b2, file$1, 192, 24, 7254);
     			attr_dev(p2, "class", "directors svelte-q80i56");
-    			add_location(p2, file$1, 191, 20, 7193);
+    			add_location(p2, file$1, 191, 20, 7207);
     			attr_dev(b3, "class", "svelte-q80i56");
-    			add_location(b3, file$1, 195, 38, 7368);
+    			add_location(b3, file$1, 195, 38, 7382);
     			attr_dev(p3, "class", "genres svelte-q80i56");
-    			add_location(p3, file$1, 195, 20, 7350);
+    			add_location(p3, file$1, 195, 20, 7364);
     			attr_dev(div5, "class", "flex-box-cast svelte-q80i56");
-    			add_location(div5, file$1, 180, 16, 6676);
+    			add_location(div5, file$1, 180, 16, 6690);
     			attr_dev(div6, "class", "item svelte-q80i56");
-    			add_location(div6, file$1, 179, 12, 6640);
+    			add_location(div6, file$1, 179, 12, 6654);
     			attr_dev(div7, "class", "flex-box svelte-q80i56");
-    			add_location(div7, file$1, 166, 8, 6027);
+    			add_location(div7, file$1, 166, 8, 6041);
     			attr_dev(div8, "class", "container svelte-q80i56");
     			add_location(div8, file$1, 97, 4, 2921);
     		},

@@ -104,7 +104,7 @@
             <video
                 src={args["video_src"]}
                 poster={args["video_poster"]}
-                style="max-width: 100%; width: 100%; cursor: pointer;"
+                style="max-width: 100%; width: 100%; height: 100%; cursor: pointer;"
                 on:mousedown|preventDefault|stopPropagation={handleMousedown}
                 on:mouseup|preventDefault|stopPropagation={handleMouseup}
                 bind:currentTime={time}
