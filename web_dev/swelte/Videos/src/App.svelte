@@ -132,9 +132,7 @@
 
     <div class="header">
         <div>
-            <span
-                style="margin-left: 20px; font-size: 4em; color: rgb(219,0,0) ; "
-                >NEFLIX</span
+            <span class="nameHeader">NEFLIX</span
             >
         </div>
 
@@ -499,6 +497,12 @@
         height: 75px;
     }
 
+    .nameHeader {
+        margin-left: 20px;
+        font-size: 3.6em; 
+        color: rgb(219,0,0);
+    }
+
     .navMenu {
         top: 0;
         right: 10px;
@@ -705,40 +709,6 @@
         z-index: 100;
     }
 
-    /* .grid {
-        margin-top: 75px;
-        display: grid;
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
-        grid-template-columns: auto auto auto auto auto;
-        padding: 10px;
-    }
-
-    .grid-item {
-        cursor: pointer;
-        background-color: var(--netflix-red-opacity);
-        border: 1px solid var(--netflix-red);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        height: 80px;
-        background-image: url("https://sveltejs.github.io/assets/caminandes-llamigos.jpg");
-        background-size: cover;  Resize the background image to cover the entire container 
-    }
-
-    #title {
-        color: var(--netflix-red);
-        font-size: 62px;
-        line-height: 100px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: black;
-        height: 100px;
-        padding-left: calc(5% + 5px);
-    } */
-
     /** https://onaircode.com/html-css-custom-scrollbar-examples/ */
     ::-webkit-scrollbar {
         width: 0.5em;
@@ -763,5 +733,11 @@
         .header .dropdown {
             display: inline-block;
         }
+
+        .nameHeader {
+        margin-left: 10px;
+        font-size: 3em; 
+        }
+
     }
 </style>
