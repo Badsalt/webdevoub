@@ -242,11 +242,7 @@
         -webkit-appearance: none;
         appearance: none;
     }
-<<<<<<< HEAD
-
-=======
     
->>>>>>> f629fd281f1a48bdbac651fdf3789aa2bd205b5c
     @media screen and (max-width: 800px) {
         .container {
             width: 100%;
