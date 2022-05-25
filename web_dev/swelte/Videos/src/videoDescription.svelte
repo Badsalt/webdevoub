@@ -83,23 +83,28 @@
         }
 
     }
+
+    let test;
+
+    test = args["actors"].length
+    console.log(test)
 </script>
 
 <Overlay
-    style="display:block;  margin-bottom: 10px ;"
+    style="display:block;  margin-bottom: 10px; "
     active={$isFullDescription}
-    opacity={0.5}
+    opacity={0.75}
 >
     <div class="container">
         <span
-            style="position: absolute; top:5px; left:5px; color: white; z-index: 5;"
+            style="position: absolute; top:5px; left:5px; color: white; z-index: 5; font-size: 20px; background-color: rgba(0,0,0,0.1); padding: 5px; border-radius: 5px; 0 4px 8px 0 rgba(0,0,0,0.2);"
             ><b>{args["movie_name"]}</b></span
         >
         <div class="video-container" id="vid">
             <video
                 src={args["video_src"]}
                 poster={args["video_poster"]}
-                style="max-width: 100%; width: 100%"
+                style="max-width: 100%; width: 100%; cursor: pointer;"
                 on:mousedown|preventDefault|stopPropagation={handleMousedown}
                 on:mouseup|preventDefault|stopPropagation={handleMouseup}
                 bind:currentTime={time}
@@ -154,13 +159,21 @@
 
         <i
             class="fa fa-times fa-2x"
-            style="color: white; position:absolute; top:0; right:0;"
+            style="color: white; position:absolute; top:5px; right:5px; cursor: pointer;"
             on:click={() => {
                 $isFullDescription = false;
             }}
         />
         <div class="flex-box">
             <div class="item" style="margin-left: 5px;">
+                <div
+                    style="display: flex; flex-direction: row; gap: 10px; margin-top: 10px; margin-bottom: 10px;"
+                >
+                    <span style="color: green">NEW</span>
+                    <span class="age-restriction">{args["ageRestriction"]}</span>
+                    <span>{args["runtime"]}</span>
+                    <span class="resolution">HD</span>
+                </div>
                 <p style="color:white;">{args["description"]}</p>
             </div>
 
@@ -169,7 +182,11 @@
                     <p class="actors">
                         <b>Actors:</b>
                         {#each args["actors"] as value}
-                            <span>{value}, </span>
+                            {#if args["actors"].length - 1 == args["actors"].indexOf(value)}
+                            <span>{value}</span>
+                            {:else}
+                                <span>{value}, </span>
+                            {/if}
                         {/each}
                     </p>
                     <p class="directors">
@@ -177,8 +194,13 @@
                         {args["directors"]}
                     </p>
                     <p class="genres"><b>Genres:</b>
+                        
                         {#each args["genres"] as value}
-                            <span>{value}, </span>
+                            {#if args["genres"].length - 1 == args["genres"].indexOf(value)}
+                            <span>{value}</span>
+                            {:else}
+                                <span>{value}, </span>
+                            {/if}
                         {/each}                        
                     </p>
                 </div>
@@ -189,13 +211,16 @@
 
 <style>
     .container {
-        width: 70%;
+        width: 60%;
         max-height: 100vh;
         position: relative;
         padding-bottom: 10px;
         background-color: rgb(12, 12, 12);
         margin: 10px auto;
         overflow-y: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px 0 rgba(25, 25, 25, 0.197);
+        color:white;
     }
 
     .video-container {
@@ -242,7 +267,7 @@
         -webkit-appearance: none;
         appearance: none;
     }
-    
+
     @media screen and (max-width: 800px) {
         .container {
             width: 100%;
@@ -251,7 +276,7 @@
     }
     @media screen and (min-width: 2000px) {
         .container {
-            width: 50%;
+            width: 40%;
         }
     }
 
@@ -269,10 +294,21 @@
         gap: 10px;
     }
 
+    .age-restriction {
+        border: rgba(255, 255, 255, 0.656) 1px solid;
+        padding: 0 5px;
+    }
+
+    .resolution {
+        border: rgba(255, 255, 255, 0.656) 1px solid;
+        padding: 0 5px;
+        border-radius: 5px;
+    }
+
     .flex-box-cast {
         display: flex;
         flex-direction: column;
-        gap: 1px;
+        gap: 10px;
     }
 
     .flex-box-cast p {
