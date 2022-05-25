@@ -735,8 +735,8 @@
         }
 
         .nameHeader {
-        margin-left: 10px;
-        font-size: 3em; 
+            margin-left: 10px;
+            font-size: 3em; 
         }
 
     }
