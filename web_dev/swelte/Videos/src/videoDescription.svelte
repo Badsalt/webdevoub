@@ -144,12 +144,6 @@
                         //     if (document.activeElement != document.body)
                         //         document.activeElement.blur();
 
-                        //         let div = document.getElementById("vid");
-                        //     if (div.requestFullscreen) div.requestFullscreen();
-                        //     else if (div.webkitRequestFullscreen)
-                        //         div.webkitRequestFullscreen();
-                        //     else if (div.msRequestFullScreen)
-                        //         div.msRequestFullScreen();
                         toggleFullScreen();
                     }}
                 >
@@ -199,10 +193,6 @@
         max-height: 100vh;
         position: relative;
         padding-bottom: 10px;
-        /* margin-top: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10px */
         background-color: rgb(12, 12, 12);
         margin: 10px auto;
         overflow-y: auto;
@@ -252,7 +242,11 @@
         -webkit-appearance: none;
         appearance: none;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f629fd281f1a48bdbac651fdf3789aa2bd205b5c
     @media screen and (max-width: 800px) {
         .container {
             width: 100%;
