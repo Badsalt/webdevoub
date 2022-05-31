@@ -1,0 +1,57 @@
+{
+    "sofie_degerman": {
+        "name": "Sofie Degerman",
+        "title": "Principal Investigator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Sofie_Degerman_croped.JPG",
+        "mail_adress": "sofie.degerman@umu.se"
+    },
+
+    "pia_osterman" : {
+        "name": "Pia Osterman",
+        "title": "Research engineer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Pia_Osterman_croped.JPG",
+        "mail_adress": "pia.osterman@umu.se"
+    },
+
+    "nina_guerini": {
+        "name": "Nina Guerini",
+        "title": "Student",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Nina_Guerini_croped.JPG",
+        "mail_adress": "nina.guerini@umu.se"
+    },
+
+    "mattias_landfors": {
+        "name": "Mattias Landfors",
+        "title": "Bioinformatican",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Mattias_Landfors_croped.JPG",
+        "mail_adress": "mattias.landfors@umu.se"
+    },
+
+    "magnus_hultdin": {
+        "name": "Magnus Hultdin",
+        "title": "Senior consultant physican",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Magnus_Hultdin_croped.JPG",
+        "mail_adress": "magnus.hultdin@umu.se"
+    },
+
+    "fernanda_hackenhaar": {
+        "name": "Fernanda Hackenhaar",
+        "title": "Post Doc",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Fernanda_Hackenhaar_croped.JPG",
+        "mail_adress": null
+    },
+    "olivia_carlund": {
+        "name": "Olivia Carlund",
+        "title": "PhD student",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "./pic/Olivia_Carlund_croped.JPG",
+        "mail_adress": "olivia.carlund@umu.se"
+    }
+
+}

@@ -132,7 +132,7 @@
 
     <div class="header">
         <div>
-            <span class="nameHeader">NEFLIX</span
+            <span class="nameHeader">JEFLIX</span
             >
         </div>
 

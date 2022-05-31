@@ -53,7 +53,7 @@
             <!-- Navbar menu content here -->
             <li><a href="/">Hem</a></li>
             <li><a href="/annat">Annat</a></li>
-            <li><a href="/wordle">Wordle</a></li>
+            <li><a href="/lab_members">Lab Members</a></li>
             <li><a href="/search">Sök</a></li>
           </ul>
         </div>
@@ -68,7 +68,7 @@
         <!-- Sidebar content here -->
         <li><a href="/">Hem</a></li>
         <li><a href="/annat">Annat</a></li>
-        <li><a href="/wordle">Wordle</a></li>
+        <li><a href="/lab_members">Lab Members</a></li>
         <li><a href="/search">Sök</a></li>
       </ul>
     </div>
