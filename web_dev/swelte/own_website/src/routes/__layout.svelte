@@ -2,9 +2,7 @@
   import "../app.css";
   import { theme, THEMES } from "$lib/stores/theme";
 
-  const toggleTheme = () => {
-    $theme = $theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
-  };
+
 </script>
 
 <main>
@@ -12,7 +10,8 @@
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
     <div class="flex flex-col drawer-content">
       <!-- Navbar -->
-      <div class="w-full navbar bg-base-300">
+      <div class="navbar bg-base-300">
+        <div class="navbar-start">
         <div class="flex-none lg:hidden">
           <label for="my-drawer-3" class="btn btn-square btn-ghost">
             <svg
@@ -29,47 +28,45 @@
             >
           </label>
         </div>
-
-        <div class="flex-1 px-2 mx-2">
-          <!-- Navbar left item -->
-          📜
-          <div class="inline-block">
-            <div class="form-control">
-              <label class="cursor-pointer label">
-                <input
-                  type="checkbox"
-                  class="toggle toggle-primary"
-                  checked={$theme !== THEMES.DARK}
-                  on:change={toggleTheme}
-                />
-              </label>
-            </div>
           </div>
-          🧁
-        </div>
 
-        <div class="flex-none hidden lg:block">
-          <ul class="menu menu-horizontal">
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
             <!-- Navbar menu content here -->
-            <li><a href="/">Hem</a></li>
-            <li><a href="/annat">Annat</a></li>
-            <li><a href="/lab_members">Lab Members</a></li>
-            <li><a href="/search">Sök</a></li>
+            <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Home</a></li> -->
+            <li><a class="btn btn-ghost normal-case text-xl" href="./research">Research Overview</a></li>
+
+            <div class="dropdown dropdown-hover">
+              <label on:click={() => {  window.open("./lab_members", "_self");   }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Lab Members</label>
+              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="./lab_members#2"  >Former Members</a></li>
+                <li><a href="./lab_members#3">Students and Visiting PostDocs</a></li>
+              </ul>
+            </div>
+            <li><a  class="btn btn-ghost normal-case text-xl" href="./publications">Publications</a></li>
+            <li><a class="btn btn-ghost normal-case text-xl" href="/news">News</a></li>
+            <li><a class="btn btn-ghost normal-case text-xl" href="/contact">Contact</a></li>
+            <li><a class="btn btn-ghost normal-case text-xl" href="#">Media</a></li>
           </ul>
         </div>
-      </div>
-      <!-- Page content here -->
+        <div class="navbar-end">
 
+        </div>
+      </div>
+       
+      <!--              <li><a class="btn btn-ghost normal-case text-xl" href="./lab_members">Lab Members</a></li>-->
       <slot />
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay" />
       <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
         <!-- Sidebar content here -->
-        <li><a href="/">Hem</a></li>
-        <li><a href="/annat">Annat</a></li>
-        <li><a href="/lab_members">Lab Members</a></li>
-        <li><a href="/search">Sök</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/">Home</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/research">Research</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/lab_members">Lab Members</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/news">News</a></li>
+
+        <li><a class="btn btn-ghost normal-case text-xl"href="/contact">Contact</a></li>
       </ul>
     </div>
   </div>

@@ -4,7 +4,10 @@
         "title": "Principal Investigator",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Sofie_Degerman_croped.JPG",
-        "mail_adress": "sofie.degerman@umu.se"
+        "mail_adress": "sofie.degerman@umu.se",
+        "status": {
+            "active": true
+        }
     },
 
     "pia_osterman" : {
@@ -12,7 +15,10 @@
         "title": "Research engineer",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Pia_Osterman_croped.JPG",
-        "mail_adress": "pia.osterman@umu.se"
+        "mail_adress": "pia.osterman@umu.se",
+        "status": {
+            "active": true
+        }
     },
 
     "nina_guerini": {
@@ -20,7 +26,10 @@
         "title": "Student",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Nina_Guerini_croped.JPG",
-        "mail_adress": "nina.guerini@umu.se"
+        "mail_adress": "nina.guerini@umu.se",
+        "status": {
+            "active": true
+        }
     },
 
     "mattias_landfors": {
@@ -28,7 +37,10 @@
         "title": "Bioinformatican",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Mattias_Landfors_croped.JPG",
-        "mail_adress": "mattias.landfors@umu.se"
+        "mail_adress": "mattias.landfors@umu.se",
+        "status": {
+            "active": true
+        }
     },
 
     "magnus_hultdin": {
@@ -36,7 +48,10 @@
         "title": "Senior consultant physican",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Magnus_Hultdin_croped.JPG",
-        "mail_adress": "magnus.hultdin@umu.se"
+        "mail_adress": "magnus.hultdin@umu.se",
+        "status": {
+            "active": true
+        }
     },
 
     "fernanda_hackenhaar": {
@@ -44,14 +59,88 @@
         "title": "Post Doc",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Fernanda_Hackenhaar_croped.JPG",
-        "mail_adress": null
+        "mail_adress": null,
+        "status": {
+            "active": true
+        }
     },
     "olivia_carlund": {
         "name": "Olivia Carlund",
         "title": "PhD student",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
         "pic_src": "./pic/Olivia_Carlund_croped.JPG",
-        "mail_adress": "olivia.carlund@umu.se"
-    }
+        "mail_adress": "olivia.carlund@umu.se",
+        "status": {
+            "active": true
+        }
+    },
 
+    "zahra_haider": {
+        "name": "Zahra Hander",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": null
+        }
+    },
+
+    "mangnus_borsen": {
+        "name": "Magnus Borsen",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": null
+        }
+    },
+    "emma_andersson_everlynn": {
+        "name": "Emma Andersson Everlynn",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": null
+        }
+    },
+    "sigrid_wennstedth": {
+        "name": "Signid Wennstedt",
+        "title": "Medreal prgran",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2015-2021"
+        }
+    },
+
+    "ida_andersson": {
+        "name": "Ida Andersson",
+        "title": "Bronderat",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2015-2022"
+        }
+    },
+    "nina_guenvi": {
+        "name": "Nina Guenvi",
+        "title": "Bronderat",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2015-2022"
+        }
+    }
 }

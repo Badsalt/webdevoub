@@ -5,7 +5,7 @@ export let args;
 import { fly, fade, slide, draw } from "svelte/transition";
 </script>
 
-<div in:fly="{{ y: 75, duration: 2000 }}" out:fade class="card lg:card-side bg-base-100 shadow-x1">
+<div in:fly="{{ y: 75, duration: 1000 }}" out:fade class="card lg:card-side bg-base-100 shadow-x1 w-full">
     <figure><img src={args.pic_src} style="width: (292/2)px; height:(341/2)px" alt={args.name}></figure>
     <div class="card-body">
       <h2 class="card-title">{args.name}, <span style="color: rgb(82,71,71)">{args.title}</span></h2>
@@ -16,7 +16,6 @@ import { fly, fade, slide, draw } from "svelte/transition";
 
 
   <style>
-
 
     .card {
         background-color: grey;
