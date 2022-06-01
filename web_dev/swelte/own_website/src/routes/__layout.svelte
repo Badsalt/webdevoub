@@ -33,13 +33,20 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0">
             <!-- Navbar menu content here -->
-            <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Home</a></li> -->
-            <li><a class="btn btn-ghost normal-case text-xl" href="./research">Research Overview</a></li>
+  
+            <div class="dropdown dropdown-hover">
+              <li><label on:click={() => {  window.open("./", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Research Overview</label></li>
+              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+                <li><a href="./lab_members#2" >Current projects</a></li>
+                <li><a href="./lab_members#3">Finnised Projects</a></li>
+              </ul>
+            </div>
+            <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Research Overview</a></li> -->
 
             <div class="dropdown dropdown-hover">
-              <label on:click={() => {  window.open("./lab_members", "_self");   }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Lab Members</label>
-              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="./lab_members#2"  >Former Members</a></li>
+              <li><label on:click={() => {  window.open("./lab_members", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Lab Members</label></li>
+              <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+                <li><a href="./lab_members#2" >Former Members</a></li>
                 <li><a href="./lab_members#3">Students and Visiting PostDocs</a></li>
               </ul>
             </div>
@@ -54,19 +61,32 @@
         </div>
       </div>
        
-      <!--              <li><a class="btn btn-ghost normal-case text-xl" href="./lab_members">Lab Members</a></li>-->
       <slot />
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay" />
       <ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
         <!-- Sidebar content here -->
-        <li><a class="btn btn-ghost normal-case text-xl" href="/">Home</a></li>
-        <li><a class="btn btn-ghost normal-case text-xl" href="/research">Research</a></li>
-        <li><a class="btn btn-ghost normal-case text-xl" href="/lab_members">Lab Members</a></li>
-        <li><a class="btn btn-ghost normal-case text-xl" href="/news">News</a></li>
+        <div class="dropdown dropdown-hover">
+          <li><label on:click={() => {  window.open("./", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Research Overview</label></li>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+            <li><a href="./lab_members#2" >Current projects</a></li>
+            <li><a href="./lab_members#3">Finnised Projects</a></li>
+          </ul>
+        </div>
+        <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Research Overview</a></li> -->
 
-        <li><a class="btn btn-ghost normal-case text-xl"href="/contact">Contact</a></li>
+        <div class="dropdown dropdown-hover">
+          <li><label on:click={() => {  window.open("./lab_members", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Lab Members</label></li>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
+            <li><a href="./lab_members#2" >Former Members</a></li>
+            <li><a href="./lab_members#3">Students and Visiting PostDocs</a></li>
+          </ul>
+        </div>
+        <li><a  class="btn btn-ghost normal-case text-xl" href="./publications">Publications</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/news">News</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="/contact">Contact</a></li>
+        <li><a class="btn btn-ghost normal-case text-xl" href="#">Media</a></li>
       </ul>
     </div>
   </div>
@@ -76,7 +96,7 @@
   class="px-10 py-4 border-t footer bg-base-200 text-base-content border-base-300"
 >
   <div>
-    <img src="majalogo.png" class="max-w-sm rounded-lg shadow-2xl" />
+   <span>DEGERMAN LAB</span>
   </div>
 </footer>
 

@@ -76,71 +76,82 @@
     },
 
     "zahra_haider": {
-        "name": "Zahra Hander",
+        "name": "Zahra Haider",
         "title": "Former PhD student",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": null
+            "period": "PhD degreed 2019"
         }
     },
 
-    "mangnus_borsen": {
-        "name": "Magnus Borsen",
+    "mangnus_borssen": {
+        "name": "Magnus Borssen",
         "title": "Former PhD student",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": null
+            "period": "PhD degreed 2016"
         }
     },
-    "emma_andersson_everlynn": {
-        "name": "Emma Andersson Everlynn",
+    "emma_andersson_evelönn": {
+        "name": "Emma Andersson Evelönn",
         "title": "Former PhD student",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": null
+            "period": "PhD degreed 2020"
         }
     },
-    "sigrid_wennstedth": {
-        "name": "Signid Wennstedt",
-        "title": "Medreal prgran",
+    "sigrid_wennstedt": {
+        "name": "Sigrid Wennstedt",
+        "title": "Medical program",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": "2015-2021"
+            "period": "2015"
         }
     },
 
     "ida_andersson": {
         "name": "Ida Andersson",
-        "title": "Bronderat",
+        "title": "Biomedical analytics program",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": "2015-2022"
+            "period": "2022"
         }
     },
-    "nina_guenvi": {
-        "name": "Nina Guenvi",
-        "title": "Bronderat",
+    "nina_guerini_student": {
+        "name": "Nina Guerini",
+        "title": "Biomedicine program",
         "description": null,
         "pic_src": null,
         "mail_adress": null,
         "status": {
             "active": false,
-            "period": "2015-2022"
+            "period": "2022"
+        }
+    },
+    "moa_nydahl": {
+        "name": "Moa Nydahl",
+        "title": "Biomedical analytics program",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2021"
         }
     }
 }
