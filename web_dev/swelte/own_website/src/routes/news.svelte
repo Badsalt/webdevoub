@@ -68,6 +68,13 @@ import { promise } from '$lib/components/stores.js'
 				</div>
 			</div>
 		</article></li>
+		<li class="mt-5"><article class="border-2 rounded-xl border-black">
+				<h1 class="font-bold">News from other Sorces</h1>
+				<ul>
+					<li><a class="underline decoration-blue" href="https://www.barncancerfonden.se/barncancerforskning/sa-ska-forskarna-utrota-barncancer/forskningsreportage/hostutlysningen---sophie-degerman/">https://www.barncancerfonden.se/barncancerforskning/sa-ska-forskarna-utrota-barncancer/forskningsreportage/hostutlysningen---sophie-degerman/</a></li>
+					<li><a class="underline decoration-blue" href="https://www.vk.se/2018-12-21/spannande-att-kunna-paverka-framtidens-vard">https://www.vk.se/2018-12-21/spannande-att-kunna-paverka-framtidens-vard</a></li>
+				</ul>
+		</article></li>
 	</ul>
 	
 	<div>
