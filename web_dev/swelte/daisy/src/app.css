@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .pending-use {
+        @apply bg-base-300
+    }
+
+   .contains {
+        @apply bg-warning
+    }
+
+    .correct {
+        @apply bg-success
+    }
+
+    .incorrect {
+        @apply bg-error
+    }
+
+}

@@ -1,0 +1,157 @@
+{
+    "sofie_degerman": {
+        "name": "Sofie Degerman",
+        "title": "Principal Investigator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Sofie_Degerman_croped.jpg",
+        "mail_adress": "sofie.degerman@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "pia_osterman" : {
+        "name": "Pia Osterman",
+        "title": "Research engineer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Pia_Osterman_croped.jpg",
+        "mail_adress": "pia.osterman@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "nina_guerini": {
+        "name": "Nina Guerini",
+        "title": "Student",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Nina_Guerini_croped.jpg",
+        "mail_adress": "nina.guerini@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "mattias_landfors": {
+        "name": "Mattias Landfors",
+        "title": "Bioinformatican",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Mattias_Landfors_croped.jpg",
+        "mail_adress": "mattias.landfors@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "magnus_hultdin": {
+        "name": "Magnus Hultdin",
+        "title": "Senior consultant physican",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Magnus_Hultdin_croped.jpg",
+        "mail_adress": "magnus.hultdin@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "fernanda_hackenhaar": {
+        "name": "Fernanda Hackenhaar",
+        "title": "Post Doc",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Fernanda_Hackenhaar_croped.jpg",
+        "mail_adress": null,
+        "status": {
+            "active": true
+        }
+    },
+    "olivia_carlund": {
+        "name": "Olivia Carlund",
+        "title": "PhD student",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et ex at sem feugiat consectetur. In eget diam in tortor tempus tempor. In pellentesque risus eget est egestas, nec suscipit magna tempor. Morbi fermentum turpis non consequat iaculis. Quisque dignissim eget elit at vestibulum. Suspendisse fringilla interdum risus a luctus.",
+        "pic_src": "/pic/Olivia_Carlund_croped.jpg",
+        "mail_adress": "olivia.carlund@umu.se",
+        "status": {
+            "active": true
+        }
+    },
+
+    "zahra_haider": {
+        "name": "Zahra Haider",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "PhD degreed 2019"
+        }
+    },
+
+    "mangnus_borssen": {
+        "name": "Magnus Borssen",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "PhD degreed 2016"
+        }
+    },
+    "emma_andersson_evelönn": {
+        "name": "Emma Andersson Evelönn",
+        "title": "Former PhD student",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "PhD degreed 2020"
+        }
+    },
+    "sigrid_wennstedt": {
+        "name": "Sigrid Wennstedt",
+        "title": "Medical program",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2015"
+        }
+    },
+
+    "ida_andersson": {
+        "name": "Ida Andersson",
+        "title": "Biomedical analytics program",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2022"
+        }
+    },
+    "nina_guerini_student": {
+        "name": "Nina Guerini",
+        "title": "Biomedicine program",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2022"
+        }
+    },
+    "moa_nydahl": {
+        "name": "Moa Nydahl",
+        "title": "Biomedical analytics program",
+        "description": null,
+        "pic_src": null,
+        "mail_adress": null,
+        "status": {
+            "active": false,
+            "period": "2021"
+        }
+    }
+}
