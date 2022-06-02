@@ -37,8 +37,8 @@
             <div class="dropdown dropdown-hover">
               <li><label on:click={() => {  window.open("./", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Research Overview</label></li>
               <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
-                <li><a href="./lab_members#2" >Current projects</a></li>
-                <li><a href="./lab_members#3">Finnised Projects</a></li>
+                <li><a href="#" >Current projects</a></li>
+                <li><a href="#">Projects</a></li>
               </ul>
             </div>
             <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Research Overview</a></li> -->
@@ -70,8 +70,8 @@
         <div class="dropdown dropdown-hover">
           <li><label on:click={() => {  window.open("./", "_self"); }} tabindex="0"  class="btn btn-ghost normal-case text-xl">Research Overview</label></li>
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-48">
-            <li><a href="./lab_members#2" >Current projects</a></li>
-            <li><a href="./lab_members#3">Finnised Projects</a></li>
+            <li><a href="#" >Current projects</a></li>
+            <li><a href="#">Finnised Projects</a></li>
           </ul>
         </div>
         <!-- <li><a class="btn btn-ghost normal-case text-xl" href="./">Research Overview</a></li> -->

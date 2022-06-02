@@ -213,7 +213,7 @@
     </div>
 
     <div class="container">
-        <h1 id="recomended">Recomended</h1>
+        <h1 id="recommended">Recommended</h1>
 
         <div class="flex-container">
             {#each Array(10) as _, i}
