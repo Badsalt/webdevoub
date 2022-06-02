@@ -1,0 +1,3 @@
+import{S as v,i as p,s as g,e as c,t as d,c as h,a as f,h as m,d as l,b as y,g as j,I as o,j as x,E as u}from"../chunks/index-897cc7d4.js";function E(e){let t,a,s,i;return{c(){t=c("div"),a=c("h1"),s=d(e[0]),i=d(`\r
+    test1`),this.h()},l(r){t=h(r,"DIV",{class:!0});var n=f(t);a=h(n,"H1",{});var _=f(a);s=m(_,e[0]),_.forEach(l),i=m(n,`\r
+    test1`),n.forEach(l),this.h()},h(){y(t,"class","error svelte-117jjaa")},m(r,n){j(r,t,n),o(t,a),o(a,s),o(t,i)},p(r,[n]){n&1&&x(s,r[0])},i:u,o:u,d(r){r&&l(t)}}}const $=({error:e,status:t})=>({props:{title:`${t}: ${e.message}`}});function I(e,t,a){let{title:s}=t;return e.$$set=i=>{"title"in i&&a(0,s=i.title)},[s]}class b extends v{constructor(t){super(),p(this,t,I,E,g,{title:0})}}export{b as default,$ as load};
